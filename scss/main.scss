@@ -10,6 +10,7 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 15px;
+    background-color: rebeccapurple;
 }
 .fa-map-marker-alt {
     margin-right: 15px;
@@ -24,4 +25,6 @@ header {
 }
 .browse_container {
     background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
 }
