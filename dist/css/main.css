@@ -17,6 +17,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 15px;
+  background-color: red;
 }
 
 .fa-map-marker-alt {
@@ -37,6 +38,12 @@ header {
 }
 
 .browse_container {
-  background-color: whitesmoke;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */
