@@ -19,7 +19,6 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 15px;
-    background-color: $primary-color;
 }
 .fa-map-marker-alt {
     margin-right: 15px;
@@ -33,7 +32,10 @@ header {
     padding: 20px;
 }
 .browse_container {
-    background-color: $secondary-color;
+    background-color: #f2f2f2;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
