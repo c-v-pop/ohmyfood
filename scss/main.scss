@@ -1,3 +1,12 @@
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 800
+);
 html {
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
@@ -10,7 +19,7 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 15px;
-    background-color: red;
+    background-color: $primary-color;
 }
 .fa-map-marker-alt {
     margin-right: 15px;
@@ -24,7 +33,7 @@ header {
     padding: 20px;
 }
 .browse_container {
-    background-color: none;
+    background-color: $secondary-color;
     display: flex;
     justify-content: center;
 }
