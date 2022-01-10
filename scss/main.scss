@@ -1,16 +1,5 @@
-
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
-$font-weights: (
-    "regular": 400,
-    "medium": 500,
-    "bold": 800
-);
-html {
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-}
+@import './resets';
+@import './variables';
 body {
     margin: 0;
     padding: 0;
@@ -27,12 +16,12 @@ header {
     display: flex;
     justify-content: center;
     font-size: 19px;
-    background-color: #f2f2f2;
+    background-color: $primary-color;
     margin-top: 15px;
     padding: 20px;
 }
 .browse_container {
-    background-color: #f2f2f2;
+    background-color: $secondary-color;
     display: flex;
     flex-direction: column;
     justify-content: center;
