@@ -3,7 +3,3 @@
 @function weight($weight-name) {
     @return map-get($font-weights,$weight-name);
 }
-body {
-    margin: 0;
-    padding: 0;
-}
