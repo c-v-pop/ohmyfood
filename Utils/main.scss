@@ -1,3 +1,10 @@
 @import './mixins';
 @import './variables';
 @import './functions';
+
+body {
+    background-color: $primary-color;
+}
+html {
+    background-color: blue;
+}
