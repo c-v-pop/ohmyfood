@@ -4,6 +4,37 @@ body {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.browse_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,10 +55,11 @@ a {
 }
 
 .btn1 {
-  width: 100%;
+  color: white;
+  font-weight: bold;
   background-color: #FF79DA;
   border-radius: 4rem;
-  padding: 15px;
+  padding: 20px 15px;
 }
 
 .btn2 {
@@ -59,6 +91,37 @@ a {
 
 .card_images {
   width: 330px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.restaurants-container {
+  width: 100%;
+  background-color: darkslateblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.restaurants_cards {
+  background-color: white;
+  margin: 10px 10px;
+  border-radius: 1rem;
+}
+
+footer {
+  background-color: darkslategray;
+  width: 100%;
 }
 
 .footer_list li {

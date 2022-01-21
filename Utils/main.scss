@@ -6,16 +6,27 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0; 
+}
+header {
+    @include flexCenter;
+}
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.browse_container {
     @include flexCenter;
 }
 a {
     text-decoration: none;
 }
 .btn1 {
-    width: 100%;
+    color: white;
+    font-weight: bold;
     background-color: $secondary-color;
     border-radius: 4rem;
-    padding: 15px;
+    padding: 20px 15px;
 }
 .btn2 {
     width: 70%;
@@ -25,12 +36,12 @@ a {
     margin: 0;
     padding: 0;
     list-style-type: none;
-  }
-  .custom-counter li {
+}
+.custom-counter li {
     counter-increment: step-counter;
     margin-bottom: 5px;
-  }
-  .custom-counter li::before {
+}
+.custom-counter li::before {
     content: counter(step-counter);
     margin-right: 20px;
     font-size: 80%;
@@ -39,12 +50,28 @@ a {
     font-weight: bold;
     padding: 3px 8px;
     border-radius: 11px;
-  }
-  .card_images {
-      width: 330px;
-  }
-  .restaurants_cards {
-  }
-  .footer_list li {
-      list-style-type: none;
-  }
+}
+.card_images {
+    width: 330px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.restaurants-container {
+    width: 100%;
+    background-color: darkslateblue;
+    @include flexCenter;
+}
+.restaurants_cards {
+    background-color: white;
+    margin: 10px 10px;
+    border-radius: 1rem;
+}
+footer {
+    background-color: darkslategray;
+    width: 100%;
+}
+.footer_list {
+    li {
+        list-style-type: none;
+    }
+}
