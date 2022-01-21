@@ -27,9 +27,29 @@ body {
 }
 
 .btn2 {
-  width: 100%;
+  width: 70%;
+  border-radius: 1rem;
+}
+
+.custom-counter {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.custom-counter li {
+  counter-increment: step-counter;
+  margin-bottom: 5px;
+}
+
+.custom-counter li::before {
+  content: counter(step-counter);
+  margin-right: 20px;
+  font-size: 80%;
   background-color: #9356DC;
-  border-radius: 4rem;
-  padding: 15px;
+  color: white;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 11px;
 }
 /*# sourceMappingURL=main.css.map */
