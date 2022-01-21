@@ -21,7 +21,7 @@ body {
 
 .btn1 {
   width: 100%;
-  background-color: #9356DC;
+  background-color: #FF79DA;
   border-radius: 4rem;
   padding: 15px;
 }
@@ -51,5 +51,9 @@ body {
   font-weight: bold;
   padding: 3px 8px;
   border-radius: 11px;
+}
+
+.card_images {
+  width: 330px;
 }
 /*# sourceMappingURL=main.css.map */
