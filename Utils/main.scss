@@ -3,8 +3,20 @@
 @import './functions';
 
 body {
-    background-color: $primary-color;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    @include flexCenter;
 }
-html {
-    background-color: blue;
+.btn1 {
+    width: 100%;
+    background-color: $primary-color;
+    border-radius: 4rem;
+    padding: 15px;
+}
+.btn2 {
+    width: 100%;
+    background-color: $primary-color;
+    border-radius: 4rem;
+    padding: 15px;
 }
