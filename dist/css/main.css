@@ -99,7 +99,8 @@ a {
 }
 
 .card_images {
-  width: 330px;
+  width: 360px;
+  max-height: 180px;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
