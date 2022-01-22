@@ -22,11 +22,13 @@ a {
     text-decoration: none;
 }
 .btn1 {
+    background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
     color: white;
     font-weight: bold;
     background-color: $secondary-color;
     border-radius: 4rem;
     padding: 20px 15px;
+    box-shadow: 5px 10px #888888;
 }
 .btn2 {
     width: 70%;
