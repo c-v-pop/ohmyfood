@@ -8,7 +8,8 @@ body {
     padding: 0; 
 }
 header {
-    @include flexCenter;
+    display: flex;
+    justify-content: center;
 }
 .location {
     display: flex;
@@ -117,4 +118,28 @@ footer {
     right: 16px;
     padding: 5px 20px;
     color: green;
+}
+.food-menu {
+    position: relative;
+    bottom: 60px;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-color: lightgrey;
+    h1 {
+        font-weight: 900;
+        margin: 10px 10px;
+        padding: 23px 0px 0px 0px;
+    }
+}
+#restaurant-container h2 {
+    font-size: 17px;
+}
+.entrees_items {
+    border-radius: 1rem;
+    margin: auto 10px;
+    background-color: white;
+}
+.center-image {
+    width: 100%;
+    max-height: 200px;
 }

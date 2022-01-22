@@ -9,3 +9,6 @@
     margin-right: 10px;
     margin-left: 0px;
 }
+@mixin gradientBtn {
+    background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
+}
