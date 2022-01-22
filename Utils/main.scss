@@ -149,6 +149,10 @@ footer {
     border-radius: 1rem;
     margin: auto 10px;
     background-color: white;
+    span {
+        @include floatRight;
+        font-weight: bold;
+    }
 }
 .center-image {
     width: 100%;

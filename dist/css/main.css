@@ -210,6 +210,12 @@ footer {
   background-color: white;
 }
 
+.entrees_items span {
+  float: right;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
 .center-image {
   width: 100%;
   max-height: 200px;
