@@ -86,9 +86,12 @@ a {
     margin: 5px 10px;
     padding-bottom: 10px;
 }
-
+#footerlogo {
+    max-height: 20px;
+    margin-left: 40px;
+}
 footer {
-    background-color: darkslategray;
+    background-color: lightgrey;
     width: 100%;
 }
 .footer_list {
