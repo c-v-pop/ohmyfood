@@ -40,6 +40,17 @@ a {
     text-align: left;
     font-weight: bold;
 }
+.gradient-button {
+    position: relative;
+    left: 25%;
+    width: 180px;
+    background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
+    color: white;
+    border-radius: 3rem;
+    padding: 15px 15px;
+    box-shadow: 4px 2px silver;
+    border: none;
+}
 .custom-counter {
     margin: 0;
     padding: 0;

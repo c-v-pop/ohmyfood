@@ -69,6 +69,20 @@ a {
   font-weight: bold;
 }
 
+.gradient-button {
+  position: relative;
+  left: 25%;
+  width: 180px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  border-radius: 3rem;
+  padding: 15px 15px;
+  -webkit-box-shadow: 4px 2px silver;
+          box-shadow: 4px 2px silver;
+  border: none;
+}
+
 .custom-counter {
   margin: 0;
   padding: 0;
