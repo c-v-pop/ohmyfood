@@ -130,6 +130,19 @@ a {
   position: relative;
 }
 
+.restaurants_cards h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 5px 10px;
+}
+
+.restaurants_cards p {
+  color: black;
+  margin: 5px 10px;
+  padding-bottom: 10px;
+}
+
 footer {
   background-color: darkslategray;
   width: 100%;
@@ -142,6 +155,7 @@ footer {
 .fa-heart {
   float: right;
   margin-right: 20px;
+  color: black;
 }
 
 .left-float {
