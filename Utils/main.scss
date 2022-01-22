@@ -28,11 +28,14 @@ a {
     background-color: $secondary-color;
     border-radius: 4rem;
     padding: 20px 15px;
-    box-shadow: 5px 10px #888888;
+    box-shadow: 2px 4px lightgrey;
+    border: none;
 }
 .btn2 {
-    width: 70%;
-    border-radius: 1rem;
+    width: 60%;
+    border-radius: 0.6rem;
+    border: none;
+    padding: 15px 30px;
 }
 .custom-counter {
     margin: 0;
@@ -60,7 +63,7 @@ a {
 }
 .restaurants-container {
     width: 100%;
-    background-color: darkslateblue;
+    background-color: lightgrey;
     @include flexCenter;
 }
 .restaurants_cards {
@@ -76,4 +79,8 @@ footer {
     li {
         list-style-type: none;
     }
+}
+.fa-heart {
+    float:right;
+    margin-right: 20px;
 }
