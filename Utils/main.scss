@@ -35,7 +35,9 @@ a {
     width: 60%;
     border-radius: 0.6rem;
     border: none;
-    padding: 15px 30px;
+    padding: 15px 15px;
+    text-align: left;
+    font-weight: bold;
 }
 .custom-counter {
     margin: 0;
@@ -83,4 +85,9 @@ footer {
 .fa-heart {
     float:right;
     margin-right: 20px;
+}
+.left-float {
+    float: left;
+    margin-right: 10px;
+    margin-left: 0px;
 }
