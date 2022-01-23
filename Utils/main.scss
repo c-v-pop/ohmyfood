@@ -1,11 +1,14 @@
 @import './mixins';
 @import './variables';
 @import './functions';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@media screen and (min-width: 250px) {
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0; 
+    font-family: 'Roboto', sans-serif;
 }
 header {
     display: flex;
@@ -81,14 +84,11 @@ a {
 .restaurants-container {
     width: 100%;
     background-color: #f6f6f6;
-    @include flexCenter;
-    align-items: flex-start;
-    justify-content: start;
+    @include flexLeft;
     padding: 5px;
     h1 {
-        position: relative;
-        top: 20px;
-        padding: 10px;
+        margin-right: auto;
+        padding-left: 1rem;
     }
 }
 .restaurants_cards {
@@ -125,7 +125,9 @@ footer {
 }
 .fa-heart {
     @include floatRight;
-    color: black;
+}
+.fa-heart:hover {
+    color: linear-gradient(to bottom right, $secondary-color, $primary-color);
 }
 .left-float {
     float: left;
@@ -133,12 +135,12 @@ footer {
     margin-left: 0px;
 }
 .top-right {
-    background-color: $tertiary-color;
+    background-color: #99e2d0;
     position: absolute;
     top: 8px;
     right: 16px;
     padding: 5px 20px;
-    color: green;
+    color: #139274;
 }
 .food-menu {
     position: relative;
@@ -167,4 +169,5 @@ footer {
 .center-image {
     width: 100%;
     max-height: 200px;
+}
 }
