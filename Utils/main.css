@@ -61,10 +61,10 @@ a {
 }
 
 .btn2 {
-  width: 80%;
-  border-radius: 1rem;
+  width: 60%;
+  border-radius: 0.6rem;
   border: none;
-  padding: 19px 15px;
+  padding: 15px 15px;
   text-align: left;
   font-weight: bold;
 }
@@ -103,8 +103,6 @@ a {
   font-weight: bold;
   padding: 3px 8px;
   border-radius: 11px;
-  position: relative;
-  left: 30px;
 }
 
 .card_images {
@@ -116,7 +114,7 @@ a {
 
 .restaurants-container {
   width: 100%;
-  background-color: #f6f6f6;
+  background-color: lightgrey;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,19 +128,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  padding: 5px;
-}
-
-.restaurants-container h1 {
-  position: relative;
-  top: 20px;
-  padding: 10px;
 }
 
 .restaurants_cards {
