@@ -1,5 +1,5 @@
 /* utils/ is where you store variables, functions, mixins, and %placeholders for extensions (if you use them). */
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @media screen and (min-width: 250px) {
   body {
     -webkit-box-sizing: border-box;
@@ -187,10 +187,12 @@
   .food-menu h1 {
     font-weight: 900;
     margin: 10px 10px;
-    padding: 23px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
+    font-family: Shrikhand;
   }
-  #restaurant-container h2 {
+  #restaurant-container h2, p {
     font-size: 17px;
+    margin-left: 20px;
   }
   .entrees_items {
     border-radius: 1rem;
