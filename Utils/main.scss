@@ -82,6 +82,10 @@
         position: relative;
         left: 30px;
     }
+    #how_header {
+        margin-left: 20px;
+        font-weight: bold;
+    }
     .card_images {
         width: 360px;
         max-height: 180px;
@@ -98,6 +102,7 @@
         h1 {
             margin-right: auto;
             padding-left: 1rem;
+            font-size: 20px;
         }
     }
     .restaurants_cards {
