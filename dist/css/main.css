@@ -55,8 +55,8 @@
     background-color: #FF79DA;
     border-radius: 4rem;
     padding: 20px 15px;
-    -webkit-box-shadow: 2px 4px lightgrey;
-            box-shadow: 2px 4px lightgrey;
+    -webkit-box-shadow: 2px 5px 16px 0px #a4aca5;
+            box-shadow: 2px 5px 16px 0px #a4aca5;
     border: none;
   }
   .btn2 {
