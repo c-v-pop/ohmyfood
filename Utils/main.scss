@@ -60,6 +60,8 @@
         padding: 15px 15px;
         box-shadow: 4px 2px silver;
         border: none;
+        margin-bottom: 60px;
+        @include greyshadow;
     }
     .custom-counter {
         margin: 0;
@@ -130,11 +132,13 @@
         width: 100%;
         min-height: 10em;
         padding-top: 1px;
+        padding-bottom: 2px;
     }
     .footer_list {
         li {
             list-style-type: none;
             color: white;
+            margin-bottom: 10px;
         }
     }
     .fa-heart {
@@ -144,8 +148,7 @@
         color: linear-gradient(to bottom right, $secondary-color, $primary-color);
     }
     .left-float {
-        margin-right: 10px;
-        margin-left: 0px;
+        margin-right: 8px;
     }
     .stick_left {
         margin-left: 15px;
@@ -182,7 +185,7 @@
         margin: auto 10px;
         background-color: white;
         span {
-            @include floatRight;
+            @include inlineRight;
             font-weight: bold;
         }
     }

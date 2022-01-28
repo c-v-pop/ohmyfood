@@ -15,9 +15,10 @@
     margin-right: 10px;
     margin-left: 0px;
 }
-@mixin floatRight {
-    float: right;
-    margin-right: 20px;
+@mixin inlineRight {
+    display: inline-block;
+    position: absolute;
+    left: 85%;
 }
 @mixin gradientBtn {
     background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);

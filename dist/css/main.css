@@ -85,6 +85,9 @@
     -webkit-box-shadow: 4px 2px silver;
             box-shadow: 4px 2px silver;
     border: none;
+    margin-bottom: 60px;
+    -webkit-box-shadow: 2px 5px 16px 0px #E5E5E5, 5px 5px 15px 15px #E5E5E5;
+    box-shadow: 2px 5px 16px 0px #E5E5E5, 5px 5px 15px 15px #E5E5E5;
   }
   .custom-counter {
     margin: 0;
@@ -167,21 +170,23 @@
     width: 100%;
     min-height: 10em;
     padding-top: 1px;
+    padding-bottom: 2px;
   }
   .footer_list li {
     list-style-type: none;
     color: white;
+    margin-bottom: 10px;
   }
   .fa-heart {
-    float: right;
-    margin-right: 20px;
+    display: inline-block;
+    position: absolute;
+    left: 85%;
   }
   .fa-heart:hover {
     color: linear-gradient(to bottom right, #FF79DA, #9356DC);
   }
   .left-float {
-    margin-right: 10px;
-    margin-left: 0px;
+    margin-right: 8px;
   }
   .stick_left {
     margin-left: 15px;
@@ -219,8 +224,9 @@
     background-color: white;
   }
   .entrees_items span {
-    float: right;
-    margin-right: 20px;
+    display: inline-block;
+    position: absolute;
+    left: 85%;
     font-weight: bold;
   }
   .center-image {
