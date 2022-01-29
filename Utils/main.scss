@@ -23,6 +23,13 @@
         @include flexCenter;
         background-color: #f6f6f6;
         padding-bottom: 50px;
+        h1 {
+            font-size: 25px;
+        }
+        p {
+            text-align: center;
+            margin: 0px 30px 30px;
+        }
     }
     a {
         text-decoration: none;
