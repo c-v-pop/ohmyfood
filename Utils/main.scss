@@ -142,7 +142,7 @@
         }
     }
     .fa-heart {
-        @include floatRight;
+        @include inlineRight;
     }
     .fa-heart:hover {
         color: linear-gradient(to bottom right, $secondary-color, $primary-color);
