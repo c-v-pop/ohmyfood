@@ -50,18 +50,18 @@
     .fa-map-marker-alt {
         margin-right: 15px;
     }
-    .gradient-button {
+    .order-button {
         position: relative;
         left: 25%;
         width: 180px;
-        background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
+        background-image: linear-gradient(to bottom, $secondary-color, $primary-color);
         color: white;
         border-radius: 3rem;
         padding: 15px 15px;
-        box-shadow: 4px 2px silver;
         border: none;
-        margin-bottom: 60px;
         @include greyshadow;
+        margin-top: 20px;
+        margin-bottom: 60px;
     }
     .custom-counter {
         margin: 0;
@@ -138,7 +138,7 @@
         li {
             list-style-type: none;
             color: white;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
     }
     .fa-heart {
@@ -147,8 +147,17 @@
     .fa-heart:hover {
         color: linear-gradient(to bottom right, $secondary-color, $primary-color);
     }
-    .left-float {
-        margin-right: 8px;
+    .fa-arrow-left {
+        position: absolute;
+        left: 20px;
+        top: 7px;
+        color: black;
+    }
+    .fa-utensils {
+        padding-right: 11px;
+    }
+    .fa-hands-helping {
+        padding-right: 6px;
     }
     .stick_left {
         margin-left: 15px;
@@ -164,17 +173,23 @@
         color: #139274;
     }
     .food-menu {
-        position: relative;
-        bottom: 60px;
         border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;
         background-color: #f6f6f6;
+        padding-bottom: 25px;
+        margin-top: 40%;
         h1 {
             font-weight: 900;
-            margin: 10px 10px;
-            padding: 30px 0px 0px 0px;
+            margin: 0px 10px;
+            padding: 10px 0px 0px 0px;
             font-family: Shrikhand;
         }
+    }
+    .center-image {
+        position: absolute;
+        top: 30;
+        opacity: 1;
+        z-index: -1;
     }
     #restaurant-container h2,p {
         font-size: 17px;
@@ -182,7 +197,6 @@
     }
     .entrees_items {
         border-radius: 1rem;
-        margin: auto 10px;
         background-color: white;
         span {
             @include inlineRight;
