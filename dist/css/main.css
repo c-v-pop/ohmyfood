@@ -77,6 +77,12 @@
     -webkit-box-shadow: 2px 5px 16px 0px #E5E5E5, 5px 5px 15px 15px #E5E5E5;
     box-shadow: 2px 5px 16px 0px #E5E5E5, 5px 5px 15px 15px #E5E5E5;
   }
+  .btn2:hover {
+    background-color: #f5edff;
+  }
+  .btn2:hover .stick_left {
+    color: #9356DC;
+  }
   .fa-map-marker-alt {
     margin-right: 15px;
   }
@@ -188,8 +194,11 @@
     position: absolute;
     left: 85%;
   }
-  .fa-heart:hover {
-    color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  .trymeout {
+    text-decoration: none;
+  }
+  .trymeout:hover {
+    color: #f5edff;
   }
   .fa-arrow-left {
     position: absolute;

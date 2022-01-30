@@ -54,6 +54,12 @@
         font-weight: bold;
         @include greyshadow;
     }
+    .btn2:hover {
+        background-color: #f5edff;
+        .stick_left {
+            color: $primary-color;
+        }
+    }
     .fa-map-marker-alt {
         margin-right: 15px;
     }
@@ -151,8 +157,11 @@
     .fa-heart {
         @include inlineRight;
     }
-    .fa-heart:hover {
-        color: linear-gradient(to bottom right, $secondary-color, $primary-color);
+    .trymeout {
+        text-decoration: none;
+    }    
+    .trymeout:hover {
+        color: #f5edff;
     }
     .fa-arrow-left {
         position: absolute;
