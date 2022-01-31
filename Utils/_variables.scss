@@ -6,4 +6,5 @@ $font-weights: (
     "medium": 500,
     "bold": 800
 );
+$gradient-color: linear-gradient(to bottom, $secondary-color, $primary-color);
 /* utils/ is where you store variables, functions, mixins, and %placeholders for extensions (if you use them). */
