@@ -1,11 +1,82 @@
 /* utils/ is where you store variables, functions, mixins, and %placeholders for extensions (if you use them). */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@-webkit-keyframes stealth {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  25% {
+    opacity: 0.5;
+    display: visible;
+  }
+  100% {
+    opacity: 1;
+    display: visible;
+  }
+}
+@keyframes stealth {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  25% {
+    opacity: 0.5;
+    display: visible;
+  }
+  100% {
+    opacity: 1;
+    display: visible;
+  }
+}
+
+@-webkit-keyframes spinMe {
+  0% {
+    opacity: 1;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  25% {
+    opacity: .5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes spinMe {
+  0% {
+    opacity: 1;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  25% {
+    opacity: .5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  -webkit-animation: stealth 5s linear 0s 0s forwards;
+          animation: stealth 5s linear 0s 0s forwards;
 }
 
 header {
@@ -18,56 +89,27 @@ header {
 }
 
 .loading {
-  position: fixed;
-  top: 0;
+  position: absolute;
 }
 
 .loading .loading__child {
-  -webkit-animation: clockwise 5s 0s;
-          animation: clockwise 5s 0s;
-  opacity: 100%;
-  -webkit-transition: opacity 5s;
-  transition: opacity 5s;
-}
-
-@-webkit-keyframes fadein {
-  100% {
-    opacity: 0;
-  }
-  0% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  100% {
-    opacity: 0;
-  }
-  0% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes clockwise {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(1440deg);
-            transform: rotate(1440deg);
-  }
-}
-
-@keyframes clockwise {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(1440deg);
-            transform: rotate(1440deg);
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: spinMe 5s 1s forwards;
+          animation: spinMe 5s 1s forwards;
+  z-index: -1;
+  min-width: 40%;
 }
 
 .location {
@@ -80,7 +122,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1001;
 }
 
 .browse_container {
