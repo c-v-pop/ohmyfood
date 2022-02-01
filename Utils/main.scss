@@ -185,7 +185,7 @@
     margin-right: 15px;
     color: #7e7e7e;
 }
-.top-right {
+.new_label {
     background-color: #99e2d0;
     position: absolute;
     top: 8px;
@@ -231,4 +231,17 @@
 .location {
     background-color: #eaeaea;
     padding: 7px;
+}
+.form {
+    @include flexCenter;
+    width: 100%;
+    background: linear-gradient(to bottom, $darkpurple, $pink);
+    min-height: 100vh;
+    color: white;
+    input {
+        background: $lime;
+        min-width: 30%;
+        padding: 10px;
+        margin: 10px;
+    }
 }

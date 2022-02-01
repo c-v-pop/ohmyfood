@@ -256,7 +256,7 @@ footer {
   color: #7e7e7e;
 }
 
-.top-right {
+.new_label {
   background-color: #99e2d0;
   position: absolute;
   top: 8px;
@@ -312,5 +312,33 @@ footer {
 .location {
   background-color: #eaeaea;
   padding: 7px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  min-height: 100vh;
+  color: white;
+}
+
+.form input {
+  background: #99E2D0;
+  min-width: 30%;
+  padding: 10px;
+  margin: 10px;
 }
 /*# sourceMappingURL=main.css.map */
