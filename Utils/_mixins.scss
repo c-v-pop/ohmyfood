@@ -24,6 +24,6 @@
     background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
 }
 @mixin greyshadow {
-    -webkit-box-shadow: 2px 5px 16px 0px #E5E5E5, 5px 5px 15px 15px #E5E5E5; 
-    box-shadow: 2px 5px 16px 0px #E5E5E5, 5px 5px 15px 15px #E5E5E5;
+    -webkit-box-shadow: 2px 5px 1px 0px #e5e5e5, 1px 1px 5px 5px #e5e5e5; 
+    box-shadow: 2px 5px 1px 0px #e5e5e5, 1px 1px 5px 5px #e5e5e5;
 }

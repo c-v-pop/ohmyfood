@@ -1,10 +1,10 @@
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
+$darkpurple: #9356DC;
+$pink: #FF79DA;
+$lime: #99E2D0;
 $font-weights: (
     "regular": 400,
     "medium": 500,
     "bold": 800
 );
-$gradient-color: linear-gradient(to bottom, $secondary-color, $primary-color);
+$gradient-color: linear-gradient(to bottom, $darkpurple, $pink);
 /* utils/ is where you store variables, functions, mixins, and %placeholders for extensions (if you use them). */

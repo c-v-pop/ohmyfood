@@ -3,7 +3,6 @@
 @import './functions';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 
-@media screen and (min-width: 250px) {
     body {
         box-sizing: border-box;
         margin: 0;
@@ -35,10 +34,10 @@
         text-decoration: none;
     }
     .btn1 {
-        background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
+        background-image: linear-gradient(to bottom right, $pink, $darkpurple);
         color: white;
         font-weight: bold;
-        background-color: $secondary-color;
+        background-color: $pink;
         border-radius: 4rem;
         padding: 20px 15px;
         box-shadow: 2px 5px 16px 0px #a4aca5;
@@ -55,8 +54,10 @@
         @include greyshadow;
         &:hover {
             background-color: #f5edff;
+            -webkit-box-shadow: 2px 5px 16px 0px #E5E5E5, 5px 5px 15px 15px #E5E5E5; 
+            box-shadow: 2px 2px 10px 15px #E5E5E5;
             .stick_left {
-                color: $primary-color;
+                color: $darkpurple;
             }
         }
     }
@@ -67,7 +68,7 @@
         position: relative;
         left: 25%;
         width: 180px;
-        background-image: linear-gradient(to bottom, $secondary-color, $primary-color);
+        background-image: linear-gradient(to bottom, $pink, $darkpurple);
         color: white;
         border-radius: 3rem;
         padding: 15px 15px;
@@ -89,7 +90,7 @@
         content: counter(step-counter);
         margin-right: 20px;
         font-size: 80%;
-        background-color: $primary-color;
+        background-color: $darkpurple;
         color: white;
         font-weight: bold;
         padding: 3px 8px;
@@ -153,15 +154,6 @@
             color: white;
             margin-bottom: 5px;
         }
-    }
-}
-.icon-stack {
-    .button {
-        width: 100px;
-        height: 100px;
-        padding-left: 20px;
-    }
-    
 }
 .fa-arrow-left {
     position: absolute;
@@ -179,7 +171,7 @@
     opacity: 0%;
     &:hover {
         opacity: 100%;
-        color: purple;
+        color: $pink;
     }
 }
 .fa-utensils {
