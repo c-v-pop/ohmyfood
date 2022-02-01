@@ -17,6 +17,59 @@ header {
           justify-content: center;
 }
 
+.loading {
+  position: fixed;
+  top: 0;
+}
+
+.loading .loading__child {
+  -webkit-animation: clockwise 5s 0s;
+          animation: clockwise 5s 0s;
+  opacity: 100%;
+  -webkit-transition: opacity 5s;
+  transition: opacity 5s;
+}
+
+@-webkit-keyframes fadein {
+  100% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes clockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(1440deg);
+            transform: rotate(1440deg);
+  }
+}
+
+@keyframes clockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(1440deg);
+            transform: rotate(1440deg);
+  }
+}
+
 .location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,6 +80,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1001;
 }
 
 .browse_container {
@@ -227,19 +281,6 @@ footer {
   display: inline-block;
   position: absolute;
   left: 85%;
-}
-
-.fa-heart:hover {
-  opacity: 0%;
-}
-
-.hidden_heart {
-  opacity: 0%;
-}
-
-.hidden_heart:hover {
-  opacity: 100%;
-  color: #FF79DA;
 }
 
 .fa-utensils {
