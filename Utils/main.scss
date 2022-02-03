@@ -121,7 +121,7 @@ a {
 }
 .restaurants-container {
     background-color: #f6f6f6;
-    @include flexLeft;
+    @include flexCenter;
     padding: 5px;
     margin-top: 50px;
     padding-bottom: 20px;
@@ -213,15 +213,14 @@ footer ul {
     opacity: 1;
     z-index: -1;
 }
-#restaurant-container h2,p {
+#restaurants-container h2,p {
     font-size: 17px;
     margin-left: 20px;
 }
 .entrees_items {
-    border-radius: 1rem;
-    background-color: white;
-    position: relative;
-    width: 100%;
+    width: 95%;
+    margin: 10%;
+    border: none;
     .pricetags {
         @include inlineRight;
         font-weight: bold;
