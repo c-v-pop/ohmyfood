@@ -196,6 +196,10 @@ a {
   box-shadow: 2px 5px 1px 0px #e5e5e5, 1px 1px 5px 5px #e5e5e5;
 }
 
+.btn2:hover {
+  background: #f5edff;
+}
+
 .btn2:hover .stick_left {
   color: #9356DC;
 }
@@ -260,7 +264,7 @@ a {
 }
 
 .card_images {
-  width: 360px;
+  width: 320px;
   max-height: 180px;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -398,6 +402,7 @@ footer ul li, footer ul a {
   border-radius: 1rem;
   background-color: white;
   position: relative;
+  width: 100%;
 }
 
 .entrees_items .pricetags {
@@ -456,11 +461,7 @@ footer ul li, footer ul a {
   background-color: #99E2D0;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  position: absolute;
-  right: 10px;
-  top: 5px;
   padding: 16px;
-  margin-bottom: 0px;
 }
 
 .fa-check-circle {

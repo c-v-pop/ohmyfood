@@ -60,6 +60,7 @@ a {
     font-weight: bold;
     @include greyshadow;
     &:hover {
+        background: #f5edff;
         .stick_left {
             color: $darkpurple;
         }
@@ -113,7 +114,7 @@ a {
     font-weight: bold;
 }
 .card_images {
-    width: 360px;
+    width: 320px;
     max-height: 180px;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -220,6 +221,7 @@ footer ul {
     border-radius: 1rem;
     background-color: white;
     position: relative;
+    width: 100%;
     .pricetags {
         @include inlineRight;
         font-weight: bold;
@@ -255,11 +257,7 @@ footer ul {
     background-color: $lime;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    position: absolute;
-    right: 10px;
-    top: 5px;
     padding: 16px;
-    margin-bottom: 0px;    
 }
 .fa-check-circle {
     color: white;
