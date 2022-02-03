@@ -200,6 +200,7 @@ footer ul {
     background-color: #f6f6f6;
     padding-bottom: 25px;
     margin-top: 40%;
+    @include flexCenter;
     h1 {
         font-weight: 900;
         margin: 0px 10px;
@@ -213,14 +214,15 @@ footer ul {
     opacity: 1;
     z-index: -1;
 }
-#restaurants-container h2,p {
-    font-size: 17px;
-    margin-left: 20px;
-}
 .entrees_items {
-    width: 95%;
-    margin: 10%;
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 100%;
     border: none;
+    background-color: white;
+    margin-bottom: 5%;
+    border-radius: 2rem;
+    text-align: left;
     .pricetags {
         @include inlineRight;
         font-weight: bold;
