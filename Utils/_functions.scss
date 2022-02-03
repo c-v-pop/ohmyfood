@@ -20,3 +20,19 @@
         opacity: 1;
      }
 }
+@keyframes slide-in {
+  from {
+    margin-top: 30%;
+    height: 100vh;
+  }
+
+  70% {
+    margin-top: 15%;
+    height: 150%;
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
