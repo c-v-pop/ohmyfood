@@ -209,8 +209,6 @@ a {
 }
 
 .order-button {
-  position: relative;
-  left: 25%;
   width: 180px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
