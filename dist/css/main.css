@@ -99,30 +99,6 @@
   }
 }
 
-@-webkit-keyframes GradientFill {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes GradientFill {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -367,9 +343,15 @@ footer ul li, footer ul a {
 }
 
 .fa-heart {
-  display: inline-block;
   position: absolute;
-  left: 85%;
+  left: 90%;
+  bottom: 16%;
+  font-size: 18px;
+  color: #139274;
+}
+
+.fa-heart:hover {
+  display: none;
 }
 
 .fa-utensils {

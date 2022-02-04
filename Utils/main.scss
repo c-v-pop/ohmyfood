@@ -173,7 +173,14 @@ footer ul {
     color: black;
 }
 .fa-heart {
-    @include inlineRight;
+    position: absolute;
+    left: 90%;
+    bottom: 16%;
+    font-size: 18px;
+    color: #139274;
+    &:hover {
+        display: none;
+    }
 }
 .fa-utensils {
     padding-right: 11px;
