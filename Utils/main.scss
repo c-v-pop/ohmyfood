@@ -114,12 +114,12 @@ a {
     font-weight: bold;
 }
 .card_images {
-    width: 320px;
+    min-width: 20em;
     max-height: 180px;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
-.restaurants-container {
+.restaurant-container {
     background-color: #f6f6f6;
     @include flexCenter;
     padding: 5px;
