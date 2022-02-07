@@ -45,6 +45,9 @@ a {
     padding: 20px 15px;
     box-shadow: 2px 5px 16px 0px #a4aca5;
     border: none;
+    &:hover {
+        box-shadow: 1px 5px 5px 3px #353535;
+    }
 }
 .btn2 {
     width: 80%;
