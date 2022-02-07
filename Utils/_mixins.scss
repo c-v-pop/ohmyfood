@@ -27,3 +27,20 @@
     -webkit-box-shadow: 2px 5px 1px 0px #e5e5e5, 1px 1px 5px 5px #e5e5e5; 
     box-shadow: 2px 5px 1px 0px #e5e5e5, 1px 1px 5px 5px #e5e5e5;
 }
+@mixin hearticon {
+    font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f004";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    flex-direction: row;
+    position: absolute;
+    right: 20px;
+}
+@mixin hearthover {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f004";
+    animation: ColorMe 2s ease-in-out infinite alternate;
+    cursor: pointer;
+}

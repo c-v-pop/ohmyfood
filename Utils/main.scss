@@ -168,22 +168,12 @@ footer ul {
 }
 .restaurants_cards {
     position: relative;
-}
-.restaurants_cards h2::after {
-    font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f004";
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    flex-direction: row;
-    position: absolute;
-    right: 20px;
-}
-.restaurants_cards h2:hover::after {
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
-    content: "\f004";
-    animation: ColorMe 2s ease-in-out forwards;
+    & h2::after {
+    @include hearticon;
+    }
+    & h2:hover::after {
+        @include hearthover;
+    }
 }
 .fa-utensils {
     padding-right: 11px;

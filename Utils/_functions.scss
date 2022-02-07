@@ -56,5 +56,26 @@
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color:transparent;
+    opacity: 25%;
+  }
+  50% {
+    background:-moz-linear-gradient(top, $darkpurple 0%,$pink 50%); 
+    background: -webkit-linear-gradient(top, $darkpurple 0%,$pink 50%); 
+    background: linear-gradient(to bottom, $darkpurple 0%,$pink 50%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    opacity: 50%;
+  }
+  100% {
+    background:-moz-linear-gradient(top, $darkpurple 0%,$pink 100%); 
+    background: -webkit-linear-gradient(top, $darkpurple 0%,$pink 100%); 
+    background: linear-gradient(to bottom, $darkpurple 0%,$pink 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    opacity: 100%;
   }
 }
