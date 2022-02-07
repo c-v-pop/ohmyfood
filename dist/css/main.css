@@ -99,6 +99,26 @@
   }
 }
 
+@-webkit-keyframes ColorMe {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes ColorMe {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -334,16 +354,32 @@ footer ul li, footer ul a {
   color: black;
 }
 
-.fa-heart {
-  position: absolute;
-  left: 90%;
-  bottom: 16%;
-  font-size: 18px;
-  color: #139274;
+.restaurants_cards {
+  position: relative;
 }
 
-.fa-heart:hover {
-  display: none;
+.restaurants_cards h2::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  right: 20px;
+}
+
+.restaurants_cards h2:hover::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f004";
+  -webkit-animation: ColorMe 2s ease-in-out forwards;
+          animation: ColorMe 2s ease-in-out forwards;
 }
 
 .fa-utensils {
@@ -399,7 +435,7 @@ footer ul li, footer ul a {
 
 .center-image {
   position: absolute;
-  top: 30;
+  top: 30px;
   opacity: 1;
   z-index: -1;
 }

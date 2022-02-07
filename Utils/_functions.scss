@@ -1,36 +1,36 @@
 @function weight($weight-name) {
-    @return map-get($font-weights,$weight-name);
+  @return map-get($font-weights,$weight-name);
 }
-  @keyframes spinMe{
-    0%{
-      opacity: 1;
-      transform: rotate(360deg);
-      z-index: 1000;
-    }
-    100%{
-      opacity: 0;
-      z-index: -1;
-    }
+@keyframes spinMe{
+  0%{
+    opacity: 1;
+    transform: rotate(360deg);
+    z-index: 1000;
   }
-  @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
+  100%{
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes slide-in {
   from {
     margin-top: 30%;
     height: 100vh;
   }
-
+  
   70% {
     margin-top: 15%;
     height: 150%;
   }
-
+  
   to {
     margin-top: 0%;
     width: 100%;
@@ -41,9 +41,20 @@
     opacity: 0;
     transform: translateX(250px);
   }
-
+  
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@keyframes ColorMe {
+  0% {
+    background:-moz-linear-gradient(top, $darkpurple 0%,$pink 100%); 
+    background: -webkit-linear-gradient(top, $darkpurple 0%,$pink 100%); 
+    background: linear-gradient(to bottom, $darkpurple 0%,$pink 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
   }
 }
