@@ -133,21 +133,23 @@ a {
     margin: 10px 10px;
     border-radius: 1rem;
     position: relative;
-}
-.restaurants_cards h2 {
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    margin: 5px 10px;
-}
-.restaurants_cards p {
-    color: black;
-    margin: 5px 10px;
-    padding-bottom: 10px;
-}
-#footerlogo {
-    max-height: 20px;
-    margin-left: 40px;
+    & h2::after {
+        @include hearticon;
+        }
+        & h2:hover::after {
+            @include hearthover;
+        }
+    & h2 {
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 5px 10px;
+    }
+    & p {
+        color: black;
+        margin: 5px 10px;
+        padding-bottom: 10px;
+    }
 }
 footer {
     background-color: #353535;
@@ -155,12 +157,16 @@ footer {
     min-height: 10em;
     padding-top: 1px;
     padding-bottom: 2px;
-}
-footer ul {
-    li,a {
-        list-style-type: none;
-        color: white;
-        margin-bottom: 5px;
+    & #footerlogo {
+        max-height: 20px;
+        margin-left: 40px;
+    }
+    & ul {
+        li,a {
+            list-style-type: none;
+            color: white;
+            margin-bottom: 5px;
+        }
     }
 }
 .fa-arrow-left {
@@ -168,15 +174,6 @@ footer ul {
     left: 20px;
     top: 7px;
     color: black;
-}
-.restaurants_cards {
-    position: relative;
-    & h2::after {
-    @include hearticon;
-    }
-    & h2:hover::after {
-        @include hearthover;
-    }
 }
 .fa-utensils {
     padding-right: 11px;
@@ -206,10 +203,15 @@ footer ul {
     @include flexCenter;
     h1 {
         font-weight: 900;
+        font-size: 29px;
         margin: 0px 10px;
         padding: 10px 0px 0px 0px;
         font-family: Shrikhand;
     }
+    & h1::after {
+        @include hearticon;
+        margin-top: 5px;
+        }
 }
 .center-image {
     position: absolute;
@@ -217,25 +219,24 @@ footer ul {
     opacity: 1;
     z-index: -1;
 }
-.entrees_items {
-    font-size: 18px;
-    font-weight: bold;
-    min-width: 100%;
+.restaurant__child {
     border: none;
     background-color: white;
-    margin-bottom: 5%;
-    border-radius: 2rem;
+    border-radius: 1rem;
     text-align: left;
     .pricetags {
         @include inlineRight;
         font-weight: bold;
     }
-    h1 {
-        margin-top: 10px;
+    h2 {
+        padding: 15px 15px 0px 15px;
+        font-size: 20px;
+        margin-bottom: 0px;
     }
     p {
-        padding: 0;
-        margin: 0;
+        margin-top: 5px;
+        margin-left: 4%;
+        padding-bottom: 15px;
     }
 }
 .center-image {
@@ -247,26 +248,4 @@ footer ul {
     padding: 7px; 
     box-shadow: inset 0px 1.6px 3px 0px #a4aca5;
     margin-top: 15px
-}
-.form {
-    @include flexCenter;
-    width: 100%;
-    background: linear-gradient(to bottom, $darkpurple, $pink);
-    min-height: 100vh;
-    color: white;
-    input {
-        background: $lime;
-        min-width: 30%;
-        padding: 10px;
-        margin: 10px;
-    }
-}
-.checklist {
-    background-color: $lime;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    padding: 16px;
-}
-.fa-check-circle {
-    color: white;
 }

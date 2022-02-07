@@ -354,49 +354,6 @@ a {
   position: relative;
 }
 
-.restaurants_cards h2 {
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 5px 10px;
-}
-
-.restaurants_cards p {
-  color: black;
-  margin: 5px 10px;
-  padding-bottom: 10px;
-}
-
-#footerlogo {
-  max-height: 20px;
-  margin-left: 40px;
-}
-
-footer {
-  background-color: #353535;
-  width: 100%;
-  min-height: 10em;
-  padding-top: 1px;
-  padding-bottom: 2px;
-}
-
-footer ul li, footer ul a {
-  list-style-type: none;
-  color: white;
-  margin-bottom: 5px;
-}
-
-.fa-arrow-left {
-  position: absolute;
-  left: 20px;
-  top: 7px;
-  color: black;
-}
-
-.restaurants_cards {
-  position: relative;
-}
-
 .restaurants_cards h2::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
@@ -420,6 +377,45 @@ footer ul li, footer ul a {
   -webkit-animation: ColorMe 2s ease-in-out infinite alternate;
           animation: ColorMe 2s ease-in-out infinite alternate;
   cursor: pointer;
+}
+
+.restaurants_cards h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 5px 10px;
+}
+
+.restaurants_cards p {
+  color: black;
+  margin: 5px 10px;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: #353535;
+  width: 100%;
+  min-height: 10em;
+  padding-top: 1px;
+  padding-bottom: 2px;
+}
+
+footer #footerlogo {
+  max-height: 20px;
+  margin-left: 40px;
+}
+
+footer ul li, footer ul a {
+  list-style-type: none;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  left: 20px;
+  top: 7px;
+  color: black;
 }
 
 .fa-utensils {
@@ -468,9 +464,27 @@ footer ul li, footer ul a {
 
 .food-menu h1 {
   font-weight: 900;
+  font-size: 29px;
   margin: 0px 10px;
   padding: 10px 0px 0px 0px;
   font-family: Shrikhand;
+}
+
+.food-menu h1::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  right: 20px;
+  margin-top: 5px;
 }
 
 .center-image {
@@ -480,31 +494,30 @@ footer ul li, footer ul a {
   z-index: -1;
 }
 
-.entrees_items {
-  font-size: 18px;
-  font-weight: bold;
-  min-width: 100%;
+.restaurant__child {
   border: none;
   background-color: white;
-  margin-bottom: 5%;
-  border-radius: 2rem;
+  border-radius: 1rem;
   text-align: left;
 }
 
-.entrees_items .pricetags {
+.restaurant__child .pricetags {
   display: inline-block;
   position: absolute;
   left: 85%;
   font-weight: bold;
 }
 
-.entrees_items h1 {
-  margin-top: 10px;
+.restaurant__child h2 {
+  padding: 15px 15px 0px 15px;
+  font-size: 20px;
+  margin-bottom: 0px;
 }
 
-.entrees_items p {
-  padding: 0;
-  margin: 0;
+.restaurant__child p {
+  margin-top: 5px;
+  margin-left: 4%;
+  padding-bottom: 15px;
 }
 
 .center-image {
@@ -518,44 +531,5 @@ footer ul li, footer ul a {
   -webkit-box-shadow: inset 0px 1.6px 3px 0px #a4aca5;
           box-shadow: inset 0px 1.6px 3px 0px #a4aca5;
   margin-top: 15px;
-}
-
-.form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(to bottom, #9356DC, #FF79DA);
-  min-height: 100vh;
-  color: white;
-}
-
-.form input {
-  background: #99E2D0;
-  min-width: 30%;
-  padding: 10px;
-  margin: 10px;
-}
-
-.checklist {
-  background-color: #99E2D0;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  padding: 16px;
-}
-
-.fa-check-circle {
-  color: white;
 }
 /*# sourceMappingURL=main.css.map */
