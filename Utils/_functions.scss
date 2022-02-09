@@ -6,10 +6,12 @@
     opacity: 1;
     transform: rotate(360deg);
     z-index: 1000;
+    color: $pink;
   }
   100%{
-    opacity: 0;
-    z-index: -1;
+    opacity: 0.5;
+    z-index: 0;
+    color: $darkpurple;
   }
 }
 @keyframes fadeInAnimation {
@@ -34,17 +36,6 @@
   to {
     margin-top: 0%;
     width: 100%;
-  }
-}
-@keyframes check {
-  0% {
-    opacity: 0;
-    transform: translateX(250px);
-  }
-  
-  100% {
-    opacity: 1;
-    transform: translateX(0);
   }
 }
 @keyframes ColorMe {
@@ -76,6 +67,14 @@
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color:transparent;
+    opacity: 100%;
+  }
+}
+@keyframes hidden {
+  0% {
+    opacity: 0%;
+  }
+  100% {
     opacity: 100%;
   }
 }

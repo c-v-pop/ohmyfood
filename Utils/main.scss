@@ -135,10 +135,10 @@ a {
     position: relative;
     & h2::after {
         @include hearticon;
-        }
-        & h2:hover::after {
-            @include hearthover;
-        }
+    }
+    & h2:hover::after {
+        @include hearthover;
+    }
     & h2 {
         color: black;
         font-weight: bold;
@@ -211,7 +211,7 @@ footer {
     & h1::after {
         @include hearticon;
         margin-top: 5px;
-        }
+    }
 }
 .center-image {
     position: absolute;
@@ -248,4 +248,23 @@ footer {
     padding: 7px; 
     box-shadow: inset 0px 1.6px 3px 0px #a4aca5;
     margin-top: 15px
+}
+.loaded {
+    animation: hidden 3s 0s ease-in;
+    position: relative;
+    z-index: 1;
+}
+.fuuuu::after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f7fb";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spinMe 5s infinite;
+    font-size: 260px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1002;
 }
