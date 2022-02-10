@@ -270,14 +270,20 @@ a {
 }
 
 @media only screen and (min-width: 600px) {
-  .restaurant-container {
-    display: inline;
-  }
   .custom-counter li {
     width: 20%;
   }
   #how_header {
     padding-left: 25px;
+  }
+  .browse_container {
+    width: 20%;
+  }
+  header {
+    width: 20%;
+  }
+  .location {
+    width: 323px;
   }
 }
 
@@ -550,4 +556,10 @@ footer ul li, footer ul a {
   position: -webkit-sticky;
   position: sticky;
 }
+
+/* Notes 4 2morro 
+
+Add visibility: hidden to required sections and cards.
+
+*/
 /*# sourceMappingURL=main.css.map */

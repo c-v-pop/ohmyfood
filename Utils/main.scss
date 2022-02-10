@@ -89,15 +89,21 @@ a {
     animation: hidden 1s forwards;
 }
 @media only screen and (min-width: 600px) {
-.restaurant-container {
-    display: inline;
-}
-.custom-counter li {
-    width: 20%;
-}
-#how_header {
-    padding-left: 25px;
-}
+    .custom-counter li {
+        width: 20%;
+    }
+    #how_header {
+        padding-left: 25px;
+    }
+    .browse_container {
+        width: 20%;
+    }
+    header {
+        width: 20%;
+    }
+    .location {
+        width: 323px;
+    }
 }
 .custom-counter li {
     counter-increment: step-counter;
@@ -278,3 +284,8 @@ footer {
     max-width: 320px;
     position: sticky;
 }
+/* Notes 4 2morro 
+
+Add visibility: hidden to required sections and cards.
+
+*/
