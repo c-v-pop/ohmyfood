@@ -6,20 +6,13 @@
     opacity: 1;
     transform: rotate(360deg);
     z-index: 1000;
-    color: $pink;
   }
   100%{
     opacity: 0.5;
-    z-index: 0;
-    color: $darkpurple;
-  }
-}
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+    z-index: -2;
+    background-color: silver;
+    border-radius: 30%;
+    visibility: hidden;
   }
 }
 @keyframes slide-in {
@@ -73,8 +66,11 @@
 @keyframes hidden {
   0% {
     opacity: 0%;
+    visibility: hidden;
+    overflow: hidden;
   }
   100% {
     opacity: 100%;
+    overflow: visible;
   }
 }

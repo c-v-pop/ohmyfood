@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0; 
     font-family: 'Roboto', sans-serif;
-    animation: fadeInAnimation ease 5s;
+    height: 100%;
 }
 .slidemein {
     animation: slide-in ease-in 2s;
@@ -224,6 +224,8 @@ footer {
     background-color: white;
     border-radius: 1rem;
     text-align: left;
+    margin-right: 3%;
+    padding-right: 55px;
     .pricetags {
         @include inlineRight;
         font-weight: bold;
@@ -239,6 +241,13 @@ footer {
         padding-bottom: 15px;
     }
 }
+.groups {
+    font-size: 20px;
+    margin-left: 2%;
+    &:hover {
+        text-decoration: underline;
+    }
+}
 .center-image {
     width: 100%;
     max-height: 200px;
@@ -250,21 +259,14 @@ footer {
     margin-top: 15px
 }
 .loaded {
-    animation: hidden 3s 0s ease-in;
-    position: relative;
-    z-index: 1;
+    animation: hidden 3s 0s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
-.fuuuu::after {
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
-    content: "\f7fb";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: spinMe 5s infinite;
-    font-size: 260px;
+.loader {
+    @include flexCenter;
+    position: fixed;
+    animation: spinMe 3s forwards;
     top: 0;
     left: 0;
-    position: absolute;
-    z-index: 1002;
+    margin-left: 25%;
+    padding: 50px;
 }
