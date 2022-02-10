@@ -3,15 +3,13 @@
 }
 @keyframes spinMe{
   0%{
-    opacity: 1;
-    transform: rotate(360deg);
+    opacity: 5;
+    transform: rotate(920deg);
     z-index: 1000;
   }
   100%{
-    opacity: 0.5;
+    opacity: 5;
     z-index: -2;
-    background-color: silver;
-    border-radius: 30%;
     visibility: hidden;
   }
 }
@@ -67,10 +65,10 @@
   0% {
     opacity: 0%;
     visibility: hidden;
-    overflow: hidden;
+    z-index: -10;
   }
   100% {
-    opacity: 100%;
-    overflow: visible;
+    visibility: visible;
+    z-index: 1001;
   }
 }

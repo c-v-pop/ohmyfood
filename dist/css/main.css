@@ -2,31 +2,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @-webkit-keyframes spinMe {
   0% {
-    opacity: 1;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    opacity: 5;
+    -webkit-transform: rotate(920deg);
+            transform: rotate(920deg);
     z-index: 1000;
   }
   100% {
-    opacity: 0.5;
+    opacity: 5;
     z-index: -2;
-    background-color: silver;
-    border-radius: 30%;
     visibility: hidden;
   }
 }
 @keyframes spinMe {
   0% {
-    opacity: 1;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    opacity: 5;
+    -webkit-transform: rotate(920deg);
+            transform: rotate(920deg);
     z-index: 1000;
   }
   100% {
-    opacity: 0.5;
+    opacity: 5;
     z-index: -2;
-    background-color: silver;
-    border-radius: 30%;
     visibility: hidden;
   }
 }
@@ -119,11 +115,11 @@
   0% {
     opacity: 0%;
     visibility: hidden;
-    overflow: hidden;
+    z-index: -10;
   }
   100% {
-    opacity: 100%;
-    overflow: visible;
+    visibility: visible;
+    z-index: 1001;
   }
 }
 
@@ -131,11 +127,11 @@
   0% {
     opacity: 0%;
     visibility: hidden;
-    overflow: hidden;
+    z-index: -10;
   }
   100% {
-    opacity: 100%;
-    overflow: visible;
+    visibility: visible;
+    z-index: 1001;
   }
 }
 
@@ -269,6 +265,20 @@ a {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  -webkit-animation: hidden 1s forwards;
+          animation: hidden 1s forwards;
+}
+
+@media only screen and (min-width: 600px) {
+  .restaurant-container {
+    display: inline;
+  }
+  .custom-counter li {
+    width: 20%;
+  }
+  #how_header {
+    padding-left: 25px;
+  }
 }
 
 .custom-counter li {
@@ -529,31 +539,15 @@ footer ul li, footer ul a {
   margin-top: 15px;
 }
 
-.loaded {
-  -webkit-animation: hidden 3s 0s cubic-bezier(0.39, 0.575, 0.565, 1);
-          animation: hidden 3s 0s cubic-bezier(0.39, 0.575, 0.565, 1);
+.loader {
+  position: absolute;
+  -webkit-animation: spinMe 5s forwards cubic-bezier(0.075, 0.82, 0.165, 1);
+          animation: spinMe 5s forwards cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.loader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: fixed;
-  -webkit-animation: spinMe 3s forwards;
-          animation: spinMe 3s forwards;
-  top: 0;
-  left: 0;
-  margin-left: 25%;
-  padding: 50px;
+.loader__image {
+  max-width: 320px;
+  position: -webkit-sticky;
+  position: sticky;
 }
 /*# sourceMappingURL=main.css.map */
