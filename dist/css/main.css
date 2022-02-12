@@ -1,6 +1,6 @@
 /* utils/ is where you store variables, functions, mixins, and %placeholders for extensions (if you use them). */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-@-webkit-keyframes spinMe {
+@-webkit-keyframes HideMe {
   0% {
     opacity: 5;
     -webkit-transform: rotate(0deg);
@@ -13,7 +13,7 @@
     visibility: hidden;
   }
 }
-@keyframes spinMe {
+@keyframes HideMe {
   0% {
     opacity: 5;
     -webkit-transform: rotate(0deg);
@@ -24,6 +24,32 @@
     opacity: 5;
     z-index: -2;
     visibility: hidden;
+  }
+}
+
+@-webkit-keyframes SpinMe {
+  0% {
+    -webkit-transform: rotate(920deg);
+            transform: rotate(920deg);
+    z-index: 1000;
+  }
+  100% {
+    visibility: hidden;
+    z-index: -2;
+    opacity: 5%;
+  }
+}
+
+@keyframes SpinMe {
+  0% {
+    -webkit-transform: rotate(920deg);
+            transform: rotate(920deg);
+    z-index: 1000;
+  }
+  100% {
+    visibility: hidden;
+    z-index: -2;
+    opacity: 5%;
   }
 }
 
@@ -547,8 +573,8 @@ footer ul li, footer ul a {
 
 .loader {
   position: absolute;
-  -webkit-animation: spinMe 3s forwards cubic-bezier(0.55, 0.085, 0.68, 0.53);
-          animation: spinMe 3s forwards cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -webkit-animation: HideMe 3s forwards;
+          animation: HideMe 3s forwards;
   top: 0;
   left: 0;
   font-size: 190px;
@@ -565,5 +591,7 @@ footer ul li, footer ul a {
   padding: 10px;
   margin-left: 25%;
   margin-top: 70%;
+  -webkit-animation: SpinMe 3s forwards;
+          animation: SpinMe 3s forwards;
 }
 /*# sourceMappingURL=main.css.map */

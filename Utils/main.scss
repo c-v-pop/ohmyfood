@@ -278,7 +278,7 @@ footer {
 }
 .loader {
     position: absolute;
-    animation: spinMe 3s forwards cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    animation: HideMe 3s forwards;
     top: 0;
     left: 0;
     font-size: 190px;
@@ -293,4 +293,5 @@ footer {
     padding: 10px;
     margin-left: 25%;
     margin-top: 70%;
+    animation: SpinMe 3s forwards;
 }
