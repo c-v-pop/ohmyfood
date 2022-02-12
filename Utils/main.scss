@@ -278,23 +278,19 @@ footer {
 }
 .loader {
     position: absolute;
-    animation: spinMe 3s forwards cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation: spinMe 3s forwards cubic-bezier(0.55, 0.085, 0.68, 0.53);
     top: 0;
     left: 0;
     font-size: 190px;
     background: $gradient-color;
     width: 100%;
-    height: 150vh;
+    height: 255vh;
 }
 .loader_style {
-    background-clip: text;
-    color: $lime;
+    color: burlywood;
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
     margin-left: 25%;
     margin-top: 70%;
 }
-
-/* Notes 4 2morro 
-
-Add visibility: hidden to required sections and cards.
-
-*/
