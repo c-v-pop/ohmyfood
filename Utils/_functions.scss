@@ -4,11 +4,10 @@
 @keyframes HideMe{
   0%{
     opacity: 5;
-    transform: rotate(0deg);
     z-index: 1000;
   }
   100%{
-    opacity: 5;
+    opacity: 0;
     z-index: -2;
     visibility: hidden;
   }
@@ -70,16 +69,5 @@
     background-clip: text;
     -webkit-text-fill-color:transparent;
     opacity: 100%;
-  }
-}
-@keyframes hidden {
-  0% {
-    opacity: 0%;
-    visibility: hidden;
-    z-index: -10;
-  }
-  100% {
-    visibility: visible;
-    z-index: 1001;
   }
 }

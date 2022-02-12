@@ -3,12 +3,10 @@
 @-webkit-keyframes HideMe {
   0% {
     opacity: 5;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
     z-index: 1000;
   }
   100% {
-    opacity: 5;
+    opacity: 0;
     z-index: -2;
     visibility: hidden;
   }
@@ -16,12 +14,10 @@
 @keyframes HideMe {
   0% {
     opacity: 5;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
     z-index: 1000;
   }
   100% {
-    opacity: 5;
+    opacity: 0;
     z-index: -2;
     visibility: hidden;
   }
@@ -134,30 +130,6 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 100%;
-  }
-}
-
-@-webkit-keyframes hidden {
-  0% {
-    opacity: 0%;
-    visibility: hidden;
-    z-index: -10;
-  }
-  100% {
-    visibility: visible;
-    z-index: 1001;
-  }
-}
-
-@keyframes hidden {
-  0% {
-    opacity: 0%;
-    visibility: hidden;
-    z-index: -10;
-  }
-  100% {
-    visibility: visible;
-    z-index: 1001;
   }
 }
 
@@ -291,8 +263,6 @@ a {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  -webkit-animation: hidden 1s forwards;
-          animation: hidden 1s forwards;
 }
 
 @media only screen and (min-width: 600px) {
