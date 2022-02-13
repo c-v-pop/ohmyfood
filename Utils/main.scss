@@ -87,21 +87,15 @@ a {
     padding: 0;
     list-style-type: none;
 }
-@media only screen and (min-width: 600px) {
-    .custom-counter li {
-        width: 20%;
+@media only screen and (min-width: 830px) {
+    .custom-counter {
+        display: flex;
+    li {
+        width: 25%;
+    }
     }
     #how_header {
         padding-left: 25px;
-    }
-    .browse_container {
-        width: 20%;
-    }
-    header {
-        width: 20%;
-    }
-    .location {
-        width: 323px;
     }
     .loader_style {
        position: fixed;
@@ -227,7 +221,7 @@ footer {
     h1 {
         font-weight: 900;
         font-size: 29px;
-        margin: 0px 10px;
+        margin: 3% 20% 3% 0%;
         padding: 10px 0px 0px 0px;
         font-family: Shrikhand;
     }
@@ -247,26 +241,28 @@ footer {
     background-color: white;
     border-radius: 1rem;
     text-align: left;
-    margin-right: 3%;
-    padding-right: 55px;
+    min-width: 44vh;
+    min-height: 50px;
     .pricetags {
         @include inlineRight;
         font-weight: bold;
     }
     h2 {
-        padding: 15px 15px 0px 15px;
-        font-size: 20px;
+        padding: 10px 15px 0px 11px;
+        font-size: 18px;
         margin-bottom: 0px;
     }
     p {
         margin-top: 5px;
         margin-left: 4%;
         padding-bottom: 15px;
+        font-size: small;
     }
 }
 .groups {
     font-size: 20px;
     margin-left: 2%;
+    font-weight: 400;
     &:hover {
         text-decoration: underline;
     }
