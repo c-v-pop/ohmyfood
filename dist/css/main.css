@@ -281,6 +281,12 @@ a {
   .location {
     width: 323px;
   }
+  .loader_style {
+    position: fixed;
+    right: 40%;
+    bottom: 30%;
+    font-size: 500px;
+  }
 }
 
 .custom-counter li {
