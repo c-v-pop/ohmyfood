@@ -23,22 +23,6 @@
     opacity: 5%;
   }
 }
-@keyframes slide-in {
-  from {
-    margin-top: 30%;
-    height: 100vh;
-  }
-  
-  70% {
-    margin-top: 15%;
-    height: 150%;
-  }
-  
-  to {
-    margin-top: 0%;
-    width: 100%;
-  }
-}
 @keyframes ColorMe {
   0% {
     background:-moz-linear-gradient(top, $darkpurple 0%,$pink 100%); 
@@ -69,5 +53,13 @@
     background-clip: text;
     -webkit-text-fill-color:transparent;
     opacity: 100%;
+  }
+}
+@keyframes reveal {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
   }
 }
