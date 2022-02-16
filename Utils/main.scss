@@ -38,6 +38,23 @@ header {
 a {
     text-decoration: none;
 }
+.pricetags::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f058';
+    color: white;
+    font-size: 36px;
+    display: block;
+    padding: 13px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: $lime;
+    position: relative;
+    bottom: 50px;
+    visibility: visible;
+    &:hover {
+        visibility: visible;
+    }
+}
 .btn1 {
     background: linear-gradient(to bottom right, $pink, $darkpurple);
     color: white;
