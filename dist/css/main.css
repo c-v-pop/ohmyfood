@@ -135,8 +135,8 @@ body {
 }
 
 .slidemein {
-  -webkit-animation: reveal 1s backwards;
-          animation: reveal 1s backwards;
+  -webkit-animation: reveal 3s backwards ease-in;
+          animation: reveal 3s backwards ease-in;
 }
 
 header {

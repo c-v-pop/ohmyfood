@@ -11,7 +11,7 @@ body {
     height: 100%;
 }
 .slidemein {
-    animation: reveal 1s backwards;
+    animation: reveal 3s backwards ease-in;
 }
 header {
     display: flex;
