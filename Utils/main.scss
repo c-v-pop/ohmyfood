@@ -121,7 +121,7 @@ a {
         justify-content: center;
         margin-bottom: 2%;
         li {
-            width: 25%;
+            width: 20%;
         }
     }
     .browse_container {
@@ -145,19 +145,17 @@ a {
         bottom: 30%;
         font-size: 500px;
     }
-    .restaurant-container {
+    .restaurants-container {
         display: flex;
-        flex-direction: row;
     }
     .restaurant-container {
         background-color: #f6f6f6;
         display: flex;
         flex-direction: row;
         padding-top: 5%;
-        max-width: 100%;
         padding-bottom: 5%;
         .restaurants_cards {
-            margin-left: 4%;
+            margin-left: 3%;
         }
         h1 {
             padding-left: 35px;
@@ -172,11 +170,10 @@ a {
         border-radius: 1rem;
         .pricetags {
             font-weight: bold;
-            position: absolute;
+            position: sticky;
             left: 18%;
             &::after {
-                width: 50%;
-                margin: 0;
+                width: 10%;
             }
         }
         h2 {
@@ -194,8 +191,27 @@ a {
     .order-button {
         width: 20%;
     }
-    .pricetags::after {
-        width: 2%;
+    .food-menu {
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        background-color: #f6f6f6;
+        padding-bottom: 25px;
+        background: none;
+        @include flexCenter;
+        h1 {
+            font-weight: 900;
+            font-size: 29px;
+            margin: 3% 20% 3% 0%;
+            padding: 10px 0px 0px 0px;
+            font-family: Shrikhand;
+        }
+        & h1::after {
+            @include hearticon;
+            margin-top: 5px;
+        }
+        & h1:hover::after {
+            @include hearthover;
+        }
     }
     footer {
         display: flex;

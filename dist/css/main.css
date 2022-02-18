@@ -299,7 +299,7 @@ a {
     margin-bottom: 2%;
   }
   .custom-counter li {
-    width: 25%;
+    width: 20%;
   }
   .browse_container {
     margin: 0% 35% 0% 35%;
@@ -326,14 +326,10 @@ a {
     bottom: 30%;
     font-size: 500px;
   }
-  .restaurant-container {
+  .restaurants-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
   .restaurant-container {
     background-color: #f6f6f6;
@@ -345,11 +341,10 @@ a {
         -ms-flex-direction: row;
             flex-direction: row;
     padding-top: 5%;
-    max-width: 100%;
     padding-bottom: 5%;
   }
   .restaurant-container .restaurants_cards {
-    margin-left: 4%;
+    margin-left: 3%;
   }
   .restaurant-container h1 {
     padding-left: 35px;
@@ -364,12 +359,12 @@ a {
   }
   .restaurant__child .pricetags {
     font-weight: bold;
-    position: absolute;
+    position: -webkit-sticky;
+    position: sticky;
     left: 18%;
   }
   .restaurant__child .pricetags::after {
-    width: 50%;
-    margin: 0;
+    width: 10%;
   }
   .restaurant__child h2 {
     padding: 10px 15px 0px 11px;
@@ -385,8 +380,56 @@ a {
   .order-button {
     width: 20%;
   }
-  .pricetags::after {
-    width: 2%;
+  .food-menu {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-color: #f6f6f6;
+    padding-bottom: 25px;
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .food-menu h1 {
+    font-weight: 900;
+    font-size: 29px;
+    margin: 3% 20% 3% 0%;
+    padding: 10px 0px 0px 0px;
+    font-family: Shrikhand;
+  }
+  .food-menu h1::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f004";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    right: 20px;
+    margin-top: 5px;
+  }
+  .food-menu h1:hover::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f004";
+    -webkit-animation: ColorMe 2s ease-in-out infinite alternate;
+            animation: ColorMe 2s ease-in-out infinite alternate;
+    cursor: pointer;
   }
   footer {
     display: -webkit-box;
