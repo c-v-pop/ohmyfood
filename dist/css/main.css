@@ -197,18 +197,16 @@ a {
   content: '\f058';
   color: white;
   font-size: 36px;
-  display: block;
+  position: relative;
+  right: 34px;
+  bottom: 24px;
   padding: 13px;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   background-color: #99E2D0;
-  position: relative;
-  bottom: 50px;
-  visibility: visible;
-}
-
-.pricetags::after:hover {
-  visibility: visible;
+  width: 0px;
+  -webkit-transition: width 3s;
+  transition: width 3s;
 }
 
 .btn1 {
@@ -365,6 +363,10 @@ a {
   }
   .restaurant__child .pricetags::after {
     width: 10%;
+    visibility: hidden;
+  }
+  .restaurant__child .pricetags:hover::after {
+    visibility: visible;
   }
   .restaurant__child h2 {
     padding: 10px 15px 0px 11px;
@@ -592,6 +594,10 @@ a {
     position: absolute;
     left: 85%;
     font-weight: bold;
+  }
+  .restaurant__child .pricetags:hover::after {
+    visibility: visible;
+    width: 300px;
   }
   .restaurant__child h2 {
     padding: 10px 15px 0px 11px;

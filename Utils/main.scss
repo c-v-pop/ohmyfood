@@ -43,17 +43,15 @@ a {
     content: '\f058';
     color: white;
     font-size: 36px;
-    display: block;
+    position: relative;
+    right: 34px;
+    bottom: 24px;
     padding: 13px;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     background-color: $lime;
-    position: relative;
-    bottom: 50px;
-    visibility: visible;
-    &:hover {
-        visibility: visible;
-    }
+    width: 0px;
+    transition: width 3s;
 }
 .btn1 {
     background: linear-gradient(to bottom right, $pink, $darkpurple);
@@ -174,6 +172,10 @@ a {
             left: 18%;
             &::after {
                 width: 10%;
+                visibility: hidden;
+            }
+            &:hover::after {
+                visibility: visible;
             }
         }
         h2 {
@@ -309,6 +311,10 @@ a {
         .pricetags {
             @include inlineRight;
             font-weight: bold;
+            &:hover::after {
+                visibility: visible;
+                width: 300px;
+            }
         }
         h2 {
             padding: 10px 15px 0px 11px;
