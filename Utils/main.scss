@@ -50,8 +50,8 @@ a {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     background-color: $lime;
-    width: 0px;
-    transition: width 3s;
+    visibility: hidden;
+    z-index: 0;
 }
 .btn1 {
     background: linear-gradient(to bottom right, $pink, $darkpurple);
@@ -118,6 +118,8 @@ a {
         display: flex;
         justify-content: center;
         margin-bottom: 2%;
+        margin-left: 5%;
+        flex-wrap: nowrap;
         li {
             width: 20%;
         }
@@ -152,12 +154,11 @@ a {
         flex-direction: row;
         padding-top: 5%;
         padding-bottom: 5%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
         .restaurants_cards {
-            margin-left: 4.6%;
-            width: 15%;
-            .card_images {
-                min-width: 100%;
-            }
+            margin-left: 3%;
         }
         h1 {
             padding-left: 35px;
@@ -315,9 +316,13 @@ a {
         .pricetags {
             @include inlineRight;
             font-weight: bold;
+            &::after {
+                animation: TurnAngle 1.2s linear infinite;
+                animation-play-state: paused;
+            }
             &:hover::after {
                 visibility: visible;
-                width: 300px;
+                animation-play-state: running;
             }
         }
         h2 {
