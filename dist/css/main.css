@@ -342,7 +342,11 @@ a {
     padding-bottom: 5%;
   }
   .restaurant-container .restaurants_cards {
-    margin-left: 3%;
+    margin-left: 4.6%;
+    width: 15%;
+  }
+  .restaurant-container .restaurants_cards .card_images {
+    min-width: 100%;
   }
   .restaurant-container h1 {
     padding-left: 35px;

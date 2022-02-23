@@ -153,7 +153,11 @@ a {
         padding-top: 5%;
         padding-bottom: 5%;
         .restaurants_cards {
-            margin-left: 3%;
+            margin-left: 4.6%;
+            width: 15%;
+            .card_images {
+                min-width: 100%;
+            }
         }
         h1 {
             padding-left: 35px;
