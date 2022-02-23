@@ -43,11 +43,9 @@ a {
     content: '\f058';
     color: white;
     font-size: 36px;
-    right: 34px;
-    bottom: 24px;
     padding: 13px;
-    border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
     background-color: $lime;
 }
 .btn1 {
@@ -174,12 +172,12 @@ a {
             &::after {
                 position:absolute;
                 right: -65px;
-                top: 0px;
+                top: -81px;
                 height: 2.7rem;
+                width: 12%;
             }
             &:hover::after {
                 right: 0;
-                transform: rotate(90deg);
                 transition: 1s;
             }
         }
