@@ -17,7 +17,7 @@
 }
 @mixin inlineRight {
     display: inline-block;
-    position: absolute;
+    position: relative;
     left: 85%;
 }
 @mixin gradientBtn {

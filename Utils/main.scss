@@ -38,20 +38,17 @@ header {
 a {
     text-decoration: none;
 }
-.pricetags::after {
+.checkmark::after {
     font-family: "Font Awesome 5 Free";
     content: '\f058';
     color: white;
     font-size: 36px;
-    position: relative;
     right: 34px;
     bottom: 24px;
     padding: 13px;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     background-color: $lime;
-    visibility: hidden;
-    z-index: 0;
 }
 .btn1 {
     background: linear-gradient(to bottom right, $pink, $darkpurple);
@@ -171,17 +168,25 @@ a {
         background-color: white;
         width: 21.5rem;
         border-radius: 1rem;
+        .checkmark {
+            overflow:visible;
+            position:relative;
+            &::after {
+                position:absolute;
+                right: -65px;
+                top: 0px;
+                height: 2.7rem;
+            }
+            &:hover::after {
+                right: 0;
+                transform: rotate(90deg);
+                transition: 1s;
+            }
+        }
         .pricetags {
             font-weight: bold;
             position: sticky;
             left: 18%;
-            &::after {
-                width: 10%;
-                visibility: hidden;
-            }
-            &:hover::after {
-                visibility: visible;
-            }
         }
         h2 {
             padding: 10px 15px 0px 11px;
@@ -307,23 +312,30 @@ a {
         width: 100%;
         max-height: 200px;
     }
+    .restaurant__child:hover .checkmark::after {
+        transition: 1s;
+        right: 0;
+        transform: rotate(90deg);
+    }
     .restaurant__child {
         background-color: white;
         border-radius: 1rem;
+        position: relative;
+        overflow: hidden;
         text-align: left;
         min-width: 44vh;
         min-height: 50px;
+        display: flex;
+        .restaurant_content {
+            flex: 0 1 auto;
+        }
+        .checkmark::after {
+            right: -200px;
+            position: absolute;
+        }
         .pricetags {
             @include inlineRight;
             font-weight: bold;
-            &::after {
-                animation: TurnAngle 1.2s linear infinite;
-                animation-play-state: paused;
-            }
-            &:hover::after {
-                visibility: visible;
-                animation-play-state: running;
-            }
         }
         h2 {
             padding: 10px 15px 0px 11px;

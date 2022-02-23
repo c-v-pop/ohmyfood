@@ -206,20 +206,17 @@ a {
   text-decoration: none;
 }
 
-.pricetags::after {
+.checkmark::after {
   font-family: "Font Awesome 5 Free";
   content: '\f058';
   color: white;
   font-size: 36px;
-  position: relative;
   right: 34px;
   bottom: 24px;
   padding: 13px;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   background-color: #99E2D0;
-  visibility: hidden;
-  z-index: 0;
 }
 
 .btn1 {
@@ -377,18 +374,28 @@ a {
     width: 21.5rem;
     border-radius: 1rem;
   }
+  .restaurant__child .checkmark {
+    overflow: visible;
+    position: relative;
+  }
+  .restaurant__child .checkmark::after {
+    position: absolute;
+    right: -65px;
+    top: 0px;
+    height: 2.7rem;
+  }
+  .restaurant__child .checkmark:hover::after {
+    right: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
   .restaurant__child .pricetags {
     font-weight: bold;
     position: -webkit-sticky;
     position: sticky;
     left: 18%;
-  }
-  .restaurant__child .pricetags::after {
-    width: 10%;
-    visibility: hidden;
-  }
-  .restaurant__child .pricetags:hover::after {
-    visibility: visible;
   }
   .restaurant__child h2 {
     padding: 10px 15px 0px 11px;
@@ -604,29 +611,39 @@ a {
     width: 100%;
     max-height: 200px;
   }
+  .restaurant__child:hover .checkmark::after {
+    -webkit-transition: 1s;
+    transition: 1s;
+    right: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
   .restaurant__child {
     background-color: white;
     border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
     text-align: left;
     min-width: 44vh;
     min-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .restaurant__child .restaurant_content {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+  .restaurant__child .checkmark::after {
+    right: -200px;
+    position: absolute;
   }
   .restaurant__child .pricetags {
     display: inline-block;
-    position: absolute;
+    position: relative;
     left: 85%;
     font-weight: bold;
-  }
-  .restaurant__child .pricetags::after {
-    -webkit-animation: TurnAngle 1.2s linear infinite;
-            animation: TurnAngle 1.2s linear infinite;
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
-  }
-  .restaurant__child .pricetags:hover::after {
-    visibility: visible;
-    -webkit-animation-play-state: running;
-            animation-play-state: running;
   }
   .restaurant__child h2 {
     padding: 10px 15px 0px 11px;
