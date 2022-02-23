@@ -42,11 +42,13 @@ a {
     font-family: "Font Awesome 5 Free";
     content: '\f058';
     color: white;
+    position: absolute;
+    right: -200px;
+    top: 1px;
     font-size: 36px;
     padding: 13px;
-    border-bottom-right-radius: 1rem;
-    border-top-right-radius: 1rem;
     background-color: $lime;
+    width: 12%;
 }
 .btn1 {
     background: linear-gradient(to bottom right, $pink, $darkpurple);
@@ -175,6 +177,8 @@ a {
                 top: -81px;
                 height: 2.7rem;
                 width: 12%;
+                border-bottom-right-radius: 1rem;
+                border-top-right-radius: 1rem;
             }
             &:hover::after {
                 right: 0;
@@ -313,37 +317,31 @@ a {
     .restaurant__child:hover .checkmark::after {
         transition: 1s;
         right: 0;
-        transform: rotate(90deg);
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
     }
     .restaurant__child {
         background-color: white;
         border-radius: 1rem;
-        position: relative;
-        overflow: hidden;
         text-align: left;
         min-width: 44vh;
+        position: relative;
         min-height: 50px;
         display: flex;
-        .restaurant_content {
-            flex: 0 1 auto;
-        }
-        .checkmark::after {
-            right: -200px;
-            position: absolute;
-        }
+        flex-direction: column;
+        margin-bottom: 5%;
         .pricetags {
             @include inlineRight;
             font-weight: bold;
         }
         h2 {
-            padding: 10px 15px 0px 11px;
+            padding: 0px 15px 0px 11px;
             font-size: 18px;
             margin-bottom: 0px;
         }
         p {
             margin-top: 5px;
             margin-left: 4%;
-            padding-bottom: 15px;
             font-size: small;
         }
     }

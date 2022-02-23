@@ -210,11 +210,13 @@ a {
   font-family: "Font Awesome 5 Free";
   content: '\f058';
   color: white;
+  position: absolute;
+  right: -200px;
+  top: 1px;
   font-size: 36px;
   padding: 13px;
-  border-bottom-right-radius: 1rem;
-  border-top-right-radius: 1rem;
   background-color: #99E2D0;
+  width: 12%;
 }
 
 .btn1 {
@@ -382,6 +384,8 @@ a {
     top: -81px;
     height: 2.7rem;
     width: 12%;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
   }
   .restaurant__child .checkmark:hover::after {
     right: 0;
@@ -612,45 +616,39 @@ a {
     -webkit-transition: 1s;
     transition: 1s;
     right: 0;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
   .restaurant__child {
     background-color: white;
     border-radius: 1rem;
-    position: relative;
-    overflow: hidden;
     text-align: left;
     min-width: 44vh;
+    position: relative;
     min-height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .restaurant__child .restaurant_content {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
-  }
-  .restaurant__child .checkmark::after {
-    right: -200px;
-    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 5%;
   }
   .restaurant__child .pricetags {
     display: inline-block;
-    position: relative;
+    position: absolute;
     left: 85%;
     font-weight: bold;
   }
   .restaurant__child h2 {
-    padding: 10px 15px 0px 11px;
+    padding: 0px 15px 0px 11px;
     font-size: 18px;
     margin-bottom: 0px;
   }
   .restaurant__child p {
     margin-top: 5px;
     margin-left: 4%;
-    padding-bottom: 15px;
     font-size: small;
   }
 }
