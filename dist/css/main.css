@@ -211,11 +211,12 @@ a {
   color: white;
   position: absolute;
   right: -200px;
-  top: 1px;
+  top: 0px;
   font-size: 36px;
   padding: 13px;
   background-color: #99E2D0;
-  width: 12%;
+  width: 10%;
+  min-height: 100%;
 }
 
 .btn1 {
@@ -372,6 +373,7 @@ a {
     background-color: white;
     width: 21.5rem;
     border-radius: 1rem;
+    overflow: hidden;
   }
   .restaurant__child .checkmark {
     position: relative;
@@ -633,6 +635,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 5%;
+    overflow: hidden;
   }
   .restaurant__child .pricetags {
     display: inline-block;

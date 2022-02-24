@@ -43,11 +43,12 @@ a {
     color: white;
     position: absolute;
     right: -200px;
-    top: 1px;
+    top: 0px;
     font-size: 36px;
     padding: 13px;
     background-color: $lime;
-    width: 12%;
+    width: 10%;
+    min-height: 100%;
 }
 .btn1 {
     background: linear-gradient(to bottom right, $pink, $darkpurple);
@@ -167,6 +168,7 @@ a {
         background-color: white;
         width: 21.5rem;
         border-radius: 1rem;
+        overflow: hidden;
         .checkmark {
             position:relative;
             .checkmarkspin {
@@ -329,6 +331,7 @@ a {
         display: flex;
         flex-direction: column;
         margin-bottom: 5%;
+        overflow: hidden;
         .pricetags {
             @include inlineRight;
             font-weight: bold;
