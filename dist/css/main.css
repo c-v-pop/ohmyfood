@@ -206,7 +206,7 @@ a {
   text-decoration: none;
 }
 
-.checkmarkspin {
+.checkmark {
   content: '';
   color: white;
   position: absolute;
@@ -374,11 +374,9 @@ a {
     width: 21.5rem;
     border-radius: 1rem;
     overflow: hidden;
-  }
-  .restaurant__child .checkmark {
     position: relative;
   }
-  .restaurant__child .checkmark .checkmarkspin {
+  .restaurant__child .checkmark {
     position: absolute;
     right: -65px;
     top: -81px;
@@ -387,111 +385,131 @@ a {
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem;
   }
-  .restaurant__child .checkmark .checkmarkspin:hover {
+  .restaurant__child .checkmark:hover {
     right: 0;
     -webkit-transition: 1s;
     transition: 1s;
     overflow: visible;
   }
-  .restaurant__child .pricetags {
+  .pricetags {
     font-weight: bold;
     position: -webkit-sticky;
     position: sticky;
     left: 18%;
   }
-  .restaurant__child h2 {
+  h2 {
     padding: 10px 15px 0px 11px;
     font-size: 18px;
     margin-bottom: 0px;
   }
-  .restaurant__child p {
+  p {
     margin-top: 5px;
     margin-left: 4%;
     padding-bottom: 15px;
     font-size: small;
   }
-  .order-button {
-    width: 20%;
-  }
-  .food-menu {
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    background-color: #f6f6f6;
-    padding-bottom: 25px;
-    background: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .food-menu h1 {
-    font-weight: 900;
-    font-size: 29px;
-    margin: 3% 20% 3% 0%;
-    padding: 10px 0px 0px 0px;
-    font-family: Shrikhand;
-  }
-  .food-menu h1::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 400;
-    content: "\f004";
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    position: absolute;
-    right: 20px;
-    margin-top: 5px;
-  }
-  .food-menu h1:hover::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f004";
-    -webkit-animation: ColorMe 2s ease-in-out infinite alternate;
-            animation: ColorMe 2s ease-in-out infinite alternate;
-    cursor: pointer;
-  }
-  footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  footer ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  footer li {
-    margin-left: 50px;
-    margin-right: 20px;
-  }
+}
+
+.checkmarkspin {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.checkmarkspin:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.order-button {
+  width: 20%;
+}
+
+.food-menu {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background-color: #f6f6f6;
+  padding-bottom: 25px;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.food-menu h1 {
+  font-weight: 900;
+  font-size: 29px;
+  margin: 3% 20% 3% 0%;
+  padding: 10px 0px 0px 0px;
+  font-family: Shrikhand;
+}
+
+.food-menu h1::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  right: 20px;
+  margin-top: 5px;
+}
+
+.food-menu h1:hover::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f004";
+  -webkit-animation: ColorMe 2s ease-in-out infinite alternate;
+          animation: ColorMe 2s ease-in-out infinite alternate;
+  cursor: pointer;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer li {
+  margin-left: 50px;
+  margin-right: 20px;
 }
 
 .custom-counter li {
@@ -613,12 +631,10 @@ a {
     width: 100%;
     max-height: 200px;
   }
-  .restaurant__child:hover .checkmarkspin {
+  .restaurant__child:hover .checkmark {
     -webkit-transition: 1s;
     transition: 1s;
     right: 0;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
   }
   .restaurant__child {
     background-color: white;
