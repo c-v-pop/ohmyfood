@@ -38,9 +38,8 @@ header {
 a {
     text-decoration: none;
 }
-.checkmark::after {
-    font-family: "Font Awesome 5 Free";
-    content: '\f058';
+.checkmarkspin {
+    content: '';
     color: white;
     position: absolute;
     right: -200px;
@@ -169,9 +168,8 @@ a {
         width: 21.5rem;
         border-radius: 1rem;
         .checkmark {
-            overflow:visible;
             position:relative;
-            &::after {
+            .checkmarkspin {
                 position:absolute;
                 right: -65px;
                 top: -81px;
@@ -180,9 +178,10 @@ a {
                 border-bottom-right-radius: 1rem;
                 border-top-right-radius: 1rem;
             }
-            &:hover::after {
+            .checkmarkspin:hover {
                 right: 0;
                 transition: 1s;
+                overflow: visible;
             }
         }
         .pricetags {
@@ -314,7 +313,7 @@ a {
         width: 100%;
         max-height: 200px;
     }
-    .restaurant__child:hover .checkmark::after {
+    .restaurant__child:hover .checkmarkspin {
         transition: 1s;
         right: 0;
         border-top-right-radius: 1rem;
