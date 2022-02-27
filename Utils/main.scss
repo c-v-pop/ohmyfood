@@ -203,7 +203,11 @@ a {
         }
     }
     .checkmarkspin {
-        transform: rotate(90deg);
+        transform: rotate(-250deg);
+        transition: 1s;
+        &:hover {
+            transform: rotateY(0deg);
+        }
     }
     .order-button {
         width: 20%;

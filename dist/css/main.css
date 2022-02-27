@@ -139,6 +139,37 @@
   }
 }
 
+@-webkit-keyframes SpinMark {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@keyframes SpinMark {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@-webkit-keyframes slide {
+  from {
+    right: 1500px;
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    right: -30px;
+    -webkit-transform: rotate(5deg);
+  }
+  75% {
+    right: 20px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -411,8 +442,15 @@ a {
 }
 
 .checkmarkspin {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(-250deg);
+          transform: rotate(-250deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.checkmarkspin:hover {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
 }
 
 .order-button {
