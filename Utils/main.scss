@@ -99,7 +99,7 @@ a {
     padding: 0;
     list-style-type: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 802px) {
     body {
         background-color: #eaeaea;
     }
@@ -142,7 +142,7 @@ a {
         bottom: 30%;
         font-size: 500px;
     }
-    .restaurants-container {
+    #restaurants-container {
         display: flex;
     }
     .restaurant-container {
@@ -171,13 +171,13 @@ a {
         overflow: hidden;
         position:relative;
         .checkmark {
-                position:absolute;
-                right: -65px;
-                top: -81px;
-                height: 2.7rem;
-                width: 12%;
-                border-bottom-right-radius: 1rem;
-                border-top-right-radius: 1rem;
+            position: absolute;
+            right: -000px;
+            top: 0%;
+            max-height: 100%;
+            width: 10%;
+            border-bottom-right-radius: 1rem;
+            border-top-right-radius: 1rem;
             }
             .checkmark:hover {
                 right: 0;
@@ -188,7 +188,7 @@ a {
         .pricetags {
             font-weight: bold;
             position: sticky;
-            left: 18%;
+            left: 90%;
         }
         h2 {
             padding: 10px 15px 0px 0px;
@@ -318,7 +318,7 @@ a {
         max-height: 200px;
     }
     .restaurant__child:hover .checkmark {
-        transition: 1s;
+        transition: all 1s ease 0s;
         right: 0;
     }
     .restaurant__child {

@@ -315,7 +315,7 @@ a {
   list-style-type: none;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 802px) {
   body {
     background-color: #eaeaea;
   }
@@ -368,7 +368,7 @@ a {
     bottom: 30%;
     font-size: 500px;
   }
-  .restaurants-container {
+  #restaurants-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -409,10 +409,10 @@ a {
   }
   .restaurant__child .checkmark {
     position: absolute;
-    right: -65px;
-    top: -81px;
-    height: 2.7rem;
-    width: 12%;
+    right: -000px;
+    top: 0%;
+    max-height: 100%;
+    width: 10%;
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem;
   }
@@ -426,7 +426,7 @@ a {
     font-weight: bold;
     position: -webkit-sticky;
     position: sticky;
-    left: 18%;
+    left: 90%;
   }
   h2 {
     padding: 10px 15px 0px 0px;
@@ -656,8 +656,8 @@ a {
     max-height: 200px;
   }
   .restaurant__child:hover .checkmark {
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
     right: 0;
   }
   .restaurant__child {
