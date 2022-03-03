@@ -248,6 +248,8 @@ a {
   background-color: #99E2D0;
   width: 10%;
   min-height: 100%;
+  -webkit-transition: right 2s;
+  transition: right 2s;
 }
 
 .btn1 {
@@ -372,6 +374,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-bottom: 10%;
   }
   .restaurant-container {
     background-color: #f6f6f6;
@@ -407,7 +410,7 @@ a {
     overflow: hidden;
     position: relative;
     padding: 0;
-    margin: 50px;
+    margin: 30px 30px 30px 61px;
   }
   .restaurant__child .checkmark {
     position: absolute;
@@ -440,6 +443,34 @@ a {
     margin-left: 4%;
     padding-bottom: 2px;
     font-size: small;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer li {
+    margin-left: 50px;
+    margin-right: 20px;
   }
 }
 
@@ -514,37 +545,6 @@ a {
   -webkit-animation: ColorMe 2s ease-in-out infinite alternate;
           animation: ColorMe 2s ease-in-out infinite alternate;
   cursor: pointer;
-}
-
-.food-menu footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.food-menu footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.food-menu footer li {
-  margin-left: 50px;
-  margin-right: 20px;
 }
 
 .custom-counter li {

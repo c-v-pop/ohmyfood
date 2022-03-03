@@ -49,6 +49,7 @@ a {
     background-color: $lime;
     width: 10%;
     min-height: 100%;
+    transition: right 2s;
 }
 .btn1 {
     background: linear-gradient(to bottom right, $pink, $darkpurple);
@@ -144,6 +145,7 @@ a {
     }
     #restaurants-container {
         display: flex;
+        padding-bottom: 10%;
     }
     .restaurant-container {
         background-color: #f6f6f6;
@@ -171,7 +173,7 @@ a {
         overflow: hidden;
         position:relative;
         padding: 0;
-        margin: 50px;
+        margin: 30px 30px 30px 61px;
         .checkmark {
             position: absolute;
             right: -200px;
@@ -202,6 +204,20 @@ a {
             margin-left: 4%;
             padding-bottom: 2px;
             font-size: small;
+        }
+        footer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            ul {
+                display: flex;
+                flex-direction: row;
+            }
+            li {
+                margin-left: 50px;
+                margin-right: 20px;
+            }
         }
     }
     .checkmarkspin {
@@ -237,20 +253,6 @@ a {
         }
         & h1:hover::after {
             @include hearthover;
-        }
-        footer {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            ul {
-                display: flex;
-                flex-direction: row;
-            }
-            li {
-                margin-left: 50px;
-                margin-right: 20px;
-            }
         }
     }
 .custom-counter li {
