@@ -203,11 +203,7 @@ a {
         }
     }
     .checkmarkspin {
-        transform: rotate(-250deg);
-        transition: 1s;
-        &:hover {
-            transform: rotateY(0deg);
-        }
+        animation: SpinCheck 1s infinite linear;
     }
     .food-menu {
         border-top-left-radius: 2rem;
@@ -442,6 +438,10 @@ footer {
     font-size: 18px;
     margin-left: 2%;
     font-weight: 400;
+    &:hover::after {
+        width: 100px;
+        transition: width 1s;
+    }
 }
 .groups::after {
     content: '';
@@ -451,10 +451,6 @@ footer {
     padding: 0px;
     border-top: solid 3px;
     margin-right: 100%;
-}
-.groups:hover::after {
-    width: 100px;
-    transition: width 1s;
 }
 .location {
     background-color: #eaeaea;

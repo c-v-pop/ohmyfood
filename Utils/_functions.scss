@@ -66,14 +66,16 @@
     clip-path: inset(0 0 0 0);
   }
 }
-@keyframes SpinMark {
-  0% {
-    transform: rotate(90deg);
-  }
-}
 @-webkit-keyframes slide {
   from {right: 1500px ; -webkit-transform: rotate(0deg)} 
   50% {right: -30px, ; -webkit-transform:rotate(5deg)} 
   75% { right: 20px} 
   to {right: 0px}
   }
+@keyframes SpinCheck {
+  0% {
+    transform: rotate(-250deg);
+    transition: 1s;
+  }
+
+}

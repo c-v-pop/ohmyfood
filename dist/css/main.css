@@ -139,20 +139,6 @@
   }
 }
 
-@-webkit-keyframes SpinMark {
-  0% {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
-}
-
-@keyframes SpinMark {
-  0% {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
-}
-
 @-webkit-keyframes slide {
   from {
     right: 1500px;
@@ -167,6 +153,24 @@
   }
   to {
     right: 0px;
+  }
+}
+
+@-webkit-keyframes SpinCheck {
+  0% {
+    -webkit-transform: rotate(-250deg);
+            transform: rotate(-250deg);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+}
+
+@keyframes SpinCheck {
+  0% {
+    -webkit-transform: rotate(-250deg);
+            transform: rotate(-250deg);
+    -webkit-transition: 1s;
+    transition: 1s;
   }
 }
 
@@ -442,15 +446,8 @@ a {
 }
 
 .checkmarkspin {
-  -webkit-transform: rotate(-250deg);
-          transform: rotate(-250deg);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.checkmarkspin:hover {
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
+  -webkit-animation: SpinCheck 1s infinite linear;
+          animation: SpinCheck 1s infinite linear;
 }
 
 .food-menu {
@@ -836,6 +833,12 @@ footer ul li, footer ul a {
   font-weight: 400;
 }
 
+.groups:hover::after {
+  width: 100px;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+
 .groups::after {
   content: '';
   display: block;
@@ -844,12 +847,6 @@ footer ul li, footer ul a {
   padding: 0px;
   border-top: solid 3px;
   margin-right: 100%;
-}
-
-.groups:hover::after {
-  width: 100px;
-  -webkit-transition: width 1s;
-  transition: width 1s;
 }
 
 .location {
