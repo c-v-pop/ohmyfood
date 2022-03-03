@@ -315,7 +315,7 @@ a {
   list-style-type: none;
 }
 
-@media only screen and (min-width: 830px) {
+@media only screen and (min-width: 992px) {
   body {
     background-color: #eaeaea;
   }
@@ -429,7 +429,7 @@ a {
     left: 18%;
   }
   h2 {
-    padding: 10px 15px 0px 11px;
+    padding: 10px 15px 0px 0px;
     font-size: 18px;
     margin-bottom: 0px;
   }
@@ -451,10 +451,6 @@ a {
 .checkmarkspin:hover {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
-}
-
-.order-button {
-  width: 20%;
 }
 
 .food-menu {
@@ -626,7 +622,7 @@ a {
   .food-menu h1 {
     font-weight: 900;
     font-size: 29px;
-    margin: 3% 20% 3% 0%;
+    margin: 3% 33% 3% 0%;
     padding: 10px 0px 0px 0px;
     font-family: Shrikhand;
   }
@@ -697,8 +693,11 @@ a {
   }
   .restaurant__child p {
     margin-top: 5px;
-    margin-left: 4%;
+    margin-left: 3%;
     font-size: small;
+  }
+  .order-button {
+    width: 40%;
   }
   footer {
     display: -webkit-box;
