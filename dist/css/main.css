@@ -180,8 +180,8 @@ body {
 }
 
 .slidemein {
-  -webkit-animation: reveal 3s backwards ease-in;
-          animation: reveal 3s backwards ease-in;
+  -webkit-animation: reveal 5ms backwards ease-in;
+          animation: reveal 5ms backwards ease-in;
 }
 
 header {
@@ -830,13 +830,26 @@ footer ul li, footer ul a {
 }
 
 .groups {
+  display: block;
   font-size: 18px;
   margin-left: 2%;
   font-weight: 400;
 }
 
-.groups:hover {
-  text-decoration: underline;
+.groups::after {
+  content: '';
+  display: block;
+  width: 40px;
+  color: #99E2D0;
+  padding: 0px;
+  border-top: solid 3px;
+  margin-right: 100%;
+}
+
+.groups:hover::after {
+  width: 100px;
+  -webkit-transition: width 1s;
+  transition: width 1s;
 }
 
 .location {

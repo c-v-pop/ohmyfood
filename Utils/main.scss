@@ -11,7 +11,7 @@ body {
     height: 100%;
 }
 .slidemein {
-    animation: reveal 3s backwards ease-in;
+    animation: reveal 5ms backwards ease-in;
 }
 header {
     display: flex;
@@ -438,12 +438,23 @@ footer {
     color: #139274;
 }
 .groups {
+    display: block;
     font-size: 18px;
     margin-left: 2%;
     font-weight: 400;
-    &:hover {
-        text-decoration: underline;
-    }
+}
+.groups::after {
+    content: '';
+    display: block;
+    width: 40px;
+    color: $lime;
+    padding: 0px;
+    border-top: solid 3px;
+    margin-right: 100%;
+}
+.groups:hover::after {
+    width: 100px;
+    transition: width 1s;
 }
 .location {
     background-color: #eaeaea;
