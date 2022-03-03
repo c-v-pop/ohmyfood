@@ -406,10 +406,12 @@ a {
     border-radius: 1rem;
     overflow: hidden;
     position: relative;
+    padding: 0;
+    margin: 50px;
   }
   .restaurant__child .checkmark {
     position: absolute;
-    right: -000px;
+    right: -200px;
     top: 0%;
     max-height: 100%;
     width: 10%;
@@ -429,14 +431,14 @@ a {
     left: 90%;
   }
   h2 {
-    padding: 10px 15px 0px 0px;
+    padding: 0px 0px 0px 12px;
     font-size: 18px;
     margin-bottom: 0px;
   }
   p {
     margin-top: 5px;
     margin-left: 4%;
-    padding-bottom: 15px;
+    padding-bottom: 2px;
     font-size: small;
   }
 }
@@ -444,6 +446,19 @@ a {
 .checkmarkspin {
   -webkit-animation: SpinCheck 1s infinite;
           animation: SpinCheck 1s infinite;
+}
+
+.groups {
+  display: block;
+  font-size: 18px;
+  margin-left: 12%;
+  font-weight: 400;
+}
+
+.groups:hover::after {
+  width: 100px;
+  -webkit-transition: width 1s;
+  transition: width 1s;
 }
 
 .food-menu {
@@ -693,6 +708,17 @@ a {
     margin-left: 3%;
     font-size: 14px;
   }
+  .groups {
+    display: block;
+    font-size: 18px;
+    margin-left: 2%;
+    font-weight: 400;
+  }
+  .groups:hover::after {
+    width: 100px;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+  }
   .order-button {
     width: 40%;
   }
@@ -824,19 +850,6 @@ footer ul li, footer ul a {
   right: 16px;
   padding: 5px 20px;
   color: #139274;
-}
-
-.groups {
-  display: block;
-  font-size: 18px;
-  margin-left: 2%;
-  font-weight: 400;
-}
-
-.groups:hover::after {
-  width: 100px;
-  -webkit-transition: width 1s;
-  transition: width 1s;
 }
 
 .groups::after {
