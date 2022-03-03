@@ -203,7 +203,7 @@ a {
         }
     }
     .checkmarkspin {
-        animation: SpinCheck 1s infinite linear;
+        animation: SpinCheck 1s infinite;
     }
     .food-menu {
         border-top-left-radius: 2rem;
@@ -305,6 +305,10 @@ a {
             @include hearthover;
         }
     }
+    #bastilleh {
+        margin-right: auto;
+        margin-left: 20px;
+    }
     .center-image {
         position: absolute;
         top: 30px;
@@ -340,7 +344,7 @@ a {
         p {
             margin-top: 5px;
             margin-left: 3%;
-            font-size: small;
+            font-size: 14px;
         }
     }
     .order-button {

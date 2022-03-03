@@ -160,8 +160,6 @@
   0% {
     -webkit-transform: rotate(-250deg);
             transform: rotate(-250deg);
-    -webkit-transition: 1s;
-    transition: 1s;
   }
 }
 
@@ -169,8 +167,6 @@
   0% {
     -webkit-transform: rotate(-250deg);
             transform: rotate(-250deg);
-    -webkit-transition: 1s;
-    transition: 1s;
   }
 }
 
@@ -446,8 +442,8 @@ a {
 }
 
 .checkmarkspin {
-  -webkit-animation: SpinCheck 1s infinite linear;
-          animation: SpinCheck 1s infinite linear;
+  -webkit-animation: SpinCheck 1s infinite;
+          animation: SpinCheck 1s infinite;
 }
 
 .food-menu {
@@ -647,6 +643,10 @@ a {
             animation: ColorMe 2s ease-in-out infinite alternate;
     cursor: pointer;
   }
+  #bastilleh {
+    margin-right: auto;
+    margin-left: 20px;
+  }
   .center-image {
     position: absolute;
     top: 30px;
@@ -691,7 +691,7 @@ a {
   .restaurant__child p {
     margin-top: 5px;
     margin-left: 3%;
-    font-size: small;
+    font-size: 14px;
   }
   .order-button {
     width: 40%;
