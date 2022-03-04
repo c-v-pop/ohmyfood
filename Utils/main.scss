@@ -182,55 +182,41 @@ a {
             width: 10%;
             border-bottom-right-radius: 1rem;
             border-top-right-radius: 1rem;
-            }
-            .checkmark:hover {
-                right: 0;
-                transition: 1s;
-                overflow: visible;
-            }
         }
-        .pricetags {
-            font-weight: bold;
-            position: sticky;
-            left: 90%;
+        .checkmark:hover {
+            right: 0;
+            transition: 1s;
+            overflow: visible;
         }
-        h2 {
-            padding: 0px 0px 0px 12px;
-            font-size: 18px;
-            margin-bottom: 0px;
-        }
-        p {
-            margin-top: 5px;
-            margin-left: 4%;
-            padding-bottom: 2px;
-            font-size: small;
-        }
-        footer {
+    }
+    .pricetags {
+        font-weight: bold;
+        position: sticky;
+        left: 90%;
+    }
+    h2 {
+        padding: 0px 0px 0px 12px;
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+    p {
+        margin-top: 5px;
+        margin-left: 4%;
+        padding-bottom: 2px;
+        font-size: small;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        ul {
             display: flex;
             flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            ul {
-                display: flex;
-                flex-direction: row;
-            }
-            li {
-                margin-left: 50px;
-                margin-right: 20px;
-            }
         }
-    }
-    .checkmarkspin {
-        animation: SpinCheck 1s infinite;
-    }
-    .groups {
-        display: block;
-        font-size: 18px;
-        margin-left: 12%;
-        font-weight: 400;
-        &:hover::after {
-            width: 100px;
-            transition: width 1s;
+        li {
+            margin-left: 50px;
+            margin-right: 20px;
         }
     }
     .food-menu {
@@ -243,18 +229,34 @@ a {
         h1 {
             font-weight: 900;
             font-size: 29px;
-            margin: 3% 20% 3% 0%;
-            padding: 10px 0px 0px 0px;
+            margin: 5%;
+            padding: 10px 0px 0px 30px;
             font-family: Shrikhand;
+            align-self: center;
         }
         & h1::after {
             @include hearticon;
-            margin-top: 5px;
+            position: sticky;
+            padding-left: 80px;
         }
         & h1:hover::after {
             @include hearthover;
         }
     }
+}
+.checkmarkspin {
+    animation: SpinCheck 1s infinite;
+}
+.groups {
+    display: block;
+    font-size: 18px;
+    margin-left: 12%;
+    font-weight: 400;
+    &:hover::after {
+        width: 100px;
+        transition: width 1s;
+    }
+}
 .custom-counter li {
     counter-increment: step-counter;
     margin-bottom: 5px;
@@ -370,6 +372,20 @@ a {
             width: 100px;
             transition: width 1s;
         }
+    }
+    .entrees {
+        visibility: hidden;
+        animation: reveal 2s linear forwards;
+    }
+    .maindishes {
+        animation: reveal 2s linear forwards;
+        animation-delay: 1s;
+        visibility: hidden;
+    }
+    .desserts {
+        animation: reveal 2s linear forwards;
+        animation-delay: 2s;
+        visibility: hidden;
     }
     .order-button {
         width: 40%;

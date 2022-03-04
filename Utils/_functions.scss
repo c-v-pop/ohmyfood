@@ -60,10 +60,12 @@
 }
 @keyframes reveal {
   from {
-    clip-path: inset(0 0 100% 0);
+    opacity: 0%;
+    visibility: hidden;
   }
   to {
-    clip-path: inset(0 0 0 0);
+    opacity: 100%;
+    visibility: visible;
   }
 }
 @-webkit-keyframes slide {

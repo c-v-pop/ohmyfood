@@ -119,23 +119,23 @@
 
 @-webkit-keyframes reveal {
   from {
-    -webkit-clip-path: inset(0 0 100% 0);
-            clip-path: inset(0 0 100% 0);
+    opacity: 0%;
+    visibility: hidden;
   }
   to {
-    -webkit-clip-path: inset(0 0 0 0);
-            clip-path: inset(0 0 0 0);
+    opacity: 100%;
+    visibility: visible;
   }
 }
 
 @keyframes reveal {
   from {
-    -webkit-clip-path: inset(0 0 100% 0);
-            clip-path: inset(0 0 100% 0);
+    opacity: 0%;
+    visibility: hidden;
   }
   to {
-    -webkit-clip-path: inset(0 0 0 0);
-            clip-path: inset(0 0 0 0);
+    opacity: 100%;
+    visibility: visible;
   }
 }
 
@@ -472,6 +472,62 @@ a {
     margin-left: 50px;
     margin-right: 20px;
   }
+  .food-menu {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-color: #f6f6f6;
+    padding-bottom: 25px;
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .food-menu h1 {
+    font-weight: 900;
+    font-size: 29px;
+    margin: 5%;
+    padding: 10px 0px 0px 30px;
+    font-family: Shrikhand;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .food-menu h1::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f004";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    right: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    padding-left: 80px;
+  }
+  .food-menu h1:hover::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f004";
+    -webkit-animation: ColorMe 1s ease-in-out infinite alternate;
+            animation: ColorMe 1s ease-in-out infinite alternate;
+    cursor: pointer;
+  }
 }
 
 .checkmarkspin {
@@ -490,61 +546,6 @@ a {
   width: 100px;
   -webkit-transition: width 1s;
   transition: width 1s;
-}
-
-.food-menu {
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  background-color: #f6f6f6;
-  padding-bottom: 25px;
-  background: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.food-menu h1 {
-  font-weight: 900;
-  font-size: 29px;
-  margin: 3% 20% 3% 0%;
-  padding: 10px 0px 0px 0px;
-  font-family: Shrikhand;
-}
-
-.food-menu h1::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  content: "\f004";
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  position: absolute;
-  right: 20px;
-  margin-top: 5px;
-}
-
-.food-menu h1:hover::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f004";
-  -webkit-animation: ColorMe 2s ease-in-out infinite alternate;
-          animation: ColorMe 2s ease-in-out infinite alternate;
-  cursor: pointer;
 }
 
 .custom-counter li {
@@ -654,8 +655,8 @@ a {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f004";
-    -webkit-animation: ColorMe 2s ease-in-out infinite alternate;
-            animation: ColorMe 2s ease-in-out infinite alternate;
+    -webkit-animation: ColorMe 1s ease-in-out infinite alternate;
+            animation: ColorMe 1s ease-in-out infinite alternate;
     cursor: pointer;
   }
   #bastilleh {
@@ -718,6 +719,25 @@ a {
     width: 100px;
     -webkit-transition: width 1s;
     transition: width 1s;
+  }
+  .entrees {
+    visibility: hidden;
+    -webkit-animation: reveal 2s linear forwards;
+            animation: reveal 2s linear forwards;
+  }
+  .maindishes {
+    -webkit-animation: reveal 2s linear forwards;
+            animation: reveal 2s linear forwards;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    visibility: hidden;
+  }
+  .desserts {
+    -webkit-animation: reveal 2s linear forwards;
+            animation: reveal 2s linear forwards;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    visibility: hidden;
   }
   .order-button {
     width: 40%;
@@ -786,8 +806,8 @@ a {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f004";
-  -webkit-animation: ColorMe 2s ease-in-out infinite alternate;
-          animation: ColorMe 2s ease-in-out infinite alternate;
+  -webkit-animation: ColorMe 1s ease-in-out infinite alternate;
+          animation: ColorMe 1s ease-in-out infinite alternate;
   cursor: pointer;
 }
 
