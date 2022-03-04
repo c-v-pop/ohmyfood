@@ -546,10 +546,49 @@ a {
 @media only screen and (min-width: 810px) {
   .center-image {
     min-width: 100%;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
   }
   .food-menu {
-    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-    background: linear-gradient(to bottom, #9356DC, #FF79DA);
+    position: relative;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+  }
+  .groups {
+    padding-left: 30%;
+  }
+  .restaurant__child {
+    background-color: #eaeaea;
+    border-radius: 1rem;
+    width: 25rem;
+    height: 80px;
+  }
+  .restaurant__child h2 {
+    font-size: 15px;
+    padding-top: 10px;
+    margin-left: 20px;
+  }
+  .restaurant__child p {
+    font-size: 15px;
+    padding-top: 10px;
+    margin-left: 20px;
+  }
+  .restaurant__child .pricetags {
+    position: absolute;
+    right: 30%;
   }
 }
 
