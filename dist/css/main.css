@@ -317,7 +317,7 @@ a {
   list-style-type: none;
 }
 
-@media only screen and (min-width: 830px) {
+@media only screen and (min-width: 900px) {
   body {
     background-color: #eaeaea;
   }
@@ -543,15 +543,15 @@ a {
   }
 }
 
-@media only screen and (min-width: 810px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .center-image {
     min-width: 100%;
-    border-bottom-left-radius: 3rem;
-    border-bottom-right-radius: 3rem;
+    border-radius: 50%;
+    margin-top: 5%;
   }
   .food-menu {
     position: relative;
-    background: white;
+    background: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -567,8 +567,67 @@ a {
             flex-direction: column;
     overflow: hidden;
   }
+  .food-menu h1 {
+    font-weight: 900;
+    font-size: 29px;
+    margin: 3% 33% 3% 13%;
+    padding: 10px 0px 0px 0px;
+    font-family: Shrikhand;
+  }
+  .food-menu h1::after {
+    position: fixed;
+    left: 70%;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f004";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    right: 20px;
+    margin-top: 5px;
+  }
+  .food-menu h1:hover::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f004";
+    -webkit-animation: ColorMe 1s ease-in-out infinite alternate;
+            animation: ColorMe 1s ease-in-out infinite alternate;
+    cursor: pointer;
+  }
+  .food-menu .order-button {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-weight: 700;
+  }
+  .food-menu .groups {
+    margin-top: 7.5%;
+    margin-bottom: 7.5%;
+  }
+  .food-menu .restaurant__child {
+    margin-top: 5%;
+  }
   .groups {
-    padding-left: 30%;
+    display: block;
+    font-size: 18px;
+    position: relative;
+    left: 30%;
+    font-weight: 400;
+  }
+  .groups:hover::after {
+    width: 100px;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+  }
+  .groups .checkmark {
+    position: absolute;
+    left: 60%;
+    color: red;
   }
   .restaurant__child {
     background-color: #eaeaea;
@@ -589,6 +648,26 @@ a {
   .restaurant__child .pricetags {
     position: absolute;
     right: 30%;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 50px;
+  }
+  footer ul li {
+    margin-left: 25px;
   }
 }
 
@@ -640,7 +719,7 @@ a {
   border-top-right-radius: 1rem;
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 600px) {
   .restaurant-container {
     background-color: #f6f6f6;
     display: -webkit-box;
@@ -832,6 +911,9 @@ a {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding-left: 0;
   }
   footer h1 {

@@ -100,7 +100,7 @@ a {
     padding: 0;
     list-style-type: none;
 }
-@media only screen and (min-width: 830px) {
+@media only screen and (min-width: 900px) {
     body {
         background-color: #eaeaea;
     }
@@ -255,20 +255,61 @@ footer {
     }
 }
 }
-@media only screen and (min-width: 810px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
     .center-image {
         min-width: 100%;
-        border-bottom-left-radius: 3rem;
-        border-bottom-right-radius: 3rem;
+        border-radius: 50%;
+        margin-top: 5%;
     }
     .food-menu {
         position: relative;
-        background: white;
+        background: none;
         @include flexCenter;
         overflow: hidden;
+        h1 {
+            font-weight: 900;
+            font-size: 29px;
+            margin: 3% 33% 3% 13%;
+            padding: 10px 0px 0px 0px;
+            font-family: Shrikhand;
+        }
+        & h1::after {
+            position: fixed;
+            left: 70%;
+            @include hearticon;
+            margin-top: 5px;
+        }
+        & h1:hover::after {
+            @include hearthover;
+        }
+        .order-button {
+            margin-top: 10%;
+            margin-bottom: 10%;
+            font-weight: 700;
+        }
+        .groups {
+            margin-top: 7.5%;
+            margin-bottom: 7.5%;
+        }
+        .restaurant__child {
+            margin-top: 5%;
+        }
     }
-    .groups {
-        padding-left: 30%;
+        .groups {
+            display: block;
+            font-size: 18px;
+            position: relative;
+            left: 30%;
+            font-weight: 400;
+            &:hover::after {
+                width: 100px;
+                transition: width 1s;
+            }
+            .checkmark {
+                position: absolute;
+                left: 60%;
+                color: red;
+            }
     }
     .restaurant__child {
         background-color: #eaeaea;
@@ -288,6 +329,18 @@ footer {
         .pricetags {
             position: absolute;
             right: 30%;
+        }
+    }
+    footer {
+        display: flex;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 50px;
+            li {
+                margin-left: 25px;
+            }
         }
     }
 }
@@ -330,7 +383,7 @@ footer {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
-@media only screen and (max-width: 430px) { 
+@media only screen and (max-width: 600px) { 
     .restaurant-container {
         background-color: #f6f6f6;
         @include flexCenter;
@@ -450,6 +503,7 @@ footer {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+            align-items: flex-start;
             padding-left: 0;
         }
         h1 {
