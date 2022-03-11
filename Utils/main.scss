@@ -50,6 +50,7 @@ a {
     width: 10%;
     min-height: 100%;
     transition: right 2s;
+    animation-delay: 500ms;
 }
 .btn1 {
     background: linear-gradient(to bottom right, $pink, $darkpurple);
@@ -176,6 +177,12 @@ a {
         justify-content: center;
         .restaurants_cards {
             margin-left: 3%;
+            p {
+                margin-left: 14px;
+            }
+            h2 {
+                margin-left: 1px;
+            }
         }
         h1 {
             padding-left: 35px;
@@ -202,6 +209,7 @@ a {
             border-top-right-radius: 1rem;
             opacity: 0%;
             transition: 2s;
+            z-index: 3;
         }
         .checkmark:hover {
             right: 0;
@@ -216,7 +224,7 @@ a {
     }
     .pricetags {
         font-weight: bold;
-        position: sticky;
+        position: absolute;
         left: 90%;
     }
     h2 {
@@ -276,7 +284,7 @@ a {
 @media only screen and (min-width: 540px) and (max-width: 992px) {
     .center-image {
         width: 100%;
-        margin-top: 5%;
+        margin-top: 0%;
         margin-bottom: 0;
         position: absolute;
         min-height: 126vh;
@@ -381,6 +389,7 @@ a {
             margin-top: 5%;
             .pricetags {
                 right: 5%;
+                font-weight: 900;
             }
         }
     }
@@ -415,7 +424,7 @@ a {
         }
         p {
             font-size: 15px;
-            padding-top: 10px;
+            padding-bottom: 10px;
             margin-left: 20px;
         }
         .pricetags {
@@ -540,10 +549,12 @@ a {
         .pricetags {
             @include inlineRight;
             font-weight: bold;
+            transition: 2s;
             &:hover {
                 position: absolute;
-                left: 80%;
-                transition: 2s;
+                left: 75%;
+                transition: 1900ms;
+                transition-delay: 50ms;
             }
         }
         h2 {
