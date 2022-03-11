@@ -321,6 +321,25 @@ a {
   body {
     background-color: #eaeaea;
   }
+  .entrees {
+    visibility: hidden;
+    -webkit-animation: reveal 2s linear forwards;
+            animation: reveal 2s linear forwards;
+  }
+  .maindishes {
+    -webkit-animation: reveal 2s linear forwards;
+            animation: reveal 2s linear forwards;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    visibility: hidden;
+  }
+  .desserts {
+    -webkit-animation: reveal 2s linear forwards;
+            animation: reveal 2s linear forwards;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    visibility: hidden;
+  }
   .center-image {
     min-height: 100%;
     min-width: 100%;
@@ -541,17 +560,95 @@ a {
             animation: ColorMe 1s ease-in-out infinite alternate;
     cursor: pointer;
   }
+  .food-menu #how_header {
+    margin-left: 20px;
+    font-weight: bold;
+  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 540px) and (max-width: 992px) {
   .center-image {
-    min-width: 100%;
-    border-radius: 50%;
+    width: 100%;
     margin-top: 5%;
+    margin-bottom: 0;
+    position: absolute;
+    min-height: 126vh;
+    opacity: 20%;
+  }
+  .restaurant__child:hover .checkmark {
+    -webkit-transition: 1s ease 0s;
+    transition: 1s ease 0s;
+    right: 0;
+  }
+  .restaurant__child {
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    overflow: visible;
+  }
+  .restaurant__child .checkmark {
+    content: '';
+    color: white;
+    position: absolute;
+    right: -200px;
+    top: 0px;
+    font-size: 36px;
+    padding: 13px;
+    background-color: #99E2D0;
+    width: 10%;
+    min-height: 67%;
+    -webkit-transition: right 2s;
+    transition: right 2s;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  .entrees {
+    overflow: hidden;
+  }
+  .maindishes {
+    overflow: hidden;
+  }
+  .desserts {
+    overflow: hidden;
+  }
+  .loader_style {
+    margin-left: 40rem;
+  }
+  .entrees {
+    visibility: hidden;
+    -webkit-animation: reveal 2s linear forwards;
+            animation: reveal 2s linear forwards;
+  }
+  .maindishes {
+    -webkit-animation: reveal 2s linear forwards;
+            animation: reveal 2s linear forwards;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    visibility: hidden;
+  }
+  .desserts {
+    -webkit-animation: reveal 2s linear forwards;
+            animation: reveal 2s linear forwards;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    visibility: hidden;
+  }
+  #how_header {
+    margin-left: 40%;
+  }
+  .custom-counter {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .card_images {
+    width: 100%;
+    min-height: 20em;
   }
   .food-menu {
     position: relative;
-    background: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -570,7 +667,7 @@ a {
   .food-menu h1 {
     font-weight: 900;
     font-size: 29px;
-    margin: 3% 33% 3% 13%;
+    margin: 10% 33% 3% 13%;
     padding: 10px 0px 0px 0px;
     font-family: Shrikhand;
   }
@@ -612,6 +709,9 @@ a {
   .food-menu .restaurant__child {
     margin-top: 5%;
   }
+  .food-menu .restaurant__child .pricetags {
+    right: 5%;
+  }
   .groups {
     display: block;
     font-size: 18px;
@@ -628,6 +728,9 @@ a {
     position: absolute;
     left: 60%;
     color: red;
+  }
+  .groups footer {
+    padding-bottom: 4px;
   }
   .restaurant__child {
     background-color: #eaeaea;
@@ -707,11 +810,6 @@ a {
   left: 30px;
 }
 
-#how_header {
-  margin-left: 20px;
-  font-weight: bold;
-}
-
 .card_images {
   min-width: 20em;
   max-height: 180px;
@@ -719,7 +817,7 @@ a {
   border-top-right-radius: 1rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 520px) {
   .restaurant-container {
     background-color: #f6f6f6;
     display: -webkit-box;
@@ -743,6 +841,10 @@ a {
     margin-right: auto;
     padding-left: 1rem;
     font-size: 20px;
+  }
+  #how_header {
+    margin-left: 20px;
+    font-weight: bold;
   }
   .food-menu {
     border-top-left-radius: 2rem;
