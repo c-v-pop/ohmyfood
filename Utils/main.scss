@@ -101,7 +101,7 @@ a {
     padding: 0;
     list-style-type: none;
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 993px) {
     body {
         background-color: #eaeaea;
     }
@@ -201,19 +201,26 @@ a {
         margin: 30px 30px 30px 61px;
         .checkmark {
             position: absolute;
-            right: -10px;
+            right: -60px;
             top: 0%;
             max-height: 100%;
             width: 10%;
             border-bottom-right-radius: 1rem;
             border-top-right-radius: 1rem;
-            opacity: 0%;
+            opacity: 100%;
             transition: 2s;
             z-index: 3;
-        }
-        .checkmark:hover {
+        } 
+        .restaurant_content:hover .checkmark {
             right: 0;
-            transition: 2s linear;
+            transition: right 2s;
+            overflow: hidden;
+            opacity: 100%;
+            z-index: 2;
+        }
+        .restaurant_content:hover .pricetags {
+            left: 75%;
+            transition: left 2s;
             overflow: hidden;
             opacity: 100%;
             z-index: 2;
@@ -226,6 +233,7 @@ a {
         font-weight: bold;
         position: absolute;
         left: 90%;
+        transition: 2s;
     }
     h2 {
         padding: 0px 0px 0px 12px;
@@ -286,9 +294,14 @@ a {
         width: 100%;
         margin-top: 0%;
         margin-bottom: 0;
-        position: absolute;
-        min-height: 126vh;
-        opacity: 20%;
+        position: fixed;
+        opacity: 30%;
+        min-height: 100%;
+        z-index: -10;
+    }
+    footer {
+        padding-right: 15px;
+        padding-bottom: 10px;
     }
     .restaurant__child:hover .checkmark {
         transition: 1s ease 0s;
@@ -531,10 +544,6 @@ a {
         width: 100%;
         max-height: 200px;
     }
-    .restaurant__child:hover .checkmark {
-        transition: 1s ease 0s;
-        right: 0;
-    }
     .restaurant__child {
         background-color: white;
         border-radius: 1rem;
@@ -549,12 +558,11 @@ a {
         .pricetags {
             @include inlineRight;
             font-weight: bold;
-            transition: 2s;
+            transition: 1s;
             &:hover {
-                position: absolute;
                 left: 75%;
-                transition: 1900ms;
-                transition-delay: 50ms;
+                transition: 900ms;
+                transition-delay: 0.3s;
             }
         }
         h2 {
@@ -570,6 +578,10 @@ a {
     }
     .checkmarkspin {
         animation: SpinCheck 2s infinite;
+    }
+    .restaurant__child:hover .checkmark {
+        transition: 1s ease 0s;
+        right: 0;
     }
     .groups {
         display: block;
@@ -697,7 +709,7 @@ footer {
 }
 .location {
     background-color: #eaeaea;
-    padding: 7px; 
+    padding: 10px; 
     box-shadow: inset 0px 1.6px 3px 0px #a4aca5;
     margin-top: 15px
 }
