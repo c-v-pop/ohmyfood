@@ -579,9 +579,13 @@ a {
     .checkmarkspin {
         animation: SpinCheck 2s infinite;
     }
-    .restaurant__child:hover .checkmark {
+    .restaurant_content:hover .checkmark {
         transition: 1s ease 0s;
         right: 0;
+    }
+    .restaurant_content:hover .pricetags {
+        transition: 1100ms ease-out 0s;
+        left: 75%;
     }
     .groups {
         display: block;

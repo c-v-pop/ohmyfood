@@ -979,10 +979,15 @@ a {
     -webkit-animation: SpinCheck 2s infinite;
             animation: SpinCheck 2s infinite;
   }
-  .restaurant__child:hover .checkmark {
+  .restaurant_content:hover .checkmark {
     -webkit-transition: 1s ease 0s;
     transition: 1s ease 0s;
     right: 0;
+  }
+  .restaurant_content:hover .pricetags {
+    -webkit-transition: 1100ms ease-out 0s;
+    transition: 1100ms ease-out 0s;
+    left: 75%;
   }
   .groups {
     display: block;
