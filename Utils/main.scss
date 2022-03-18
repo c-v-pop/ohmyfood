@@ -232,7 +232,6 @@ a {
     .pricetags {
         font-weight: bold;
         position: absolute;
-        left: 90%;
         transition: 2s;
     }
     h2 {
@@ -303,9 +302,13 @@ a {
         padding-right: 15px;
         padding-bottom: 10px;
     }
-    .restaurant__child:hover .checkmark {
+    .restaurant_content:hover .checkmark {
         transition: 1s ease 0s;
         right: 0;
+    }
+    .restaurant_content:hover .pricetags {
+        transition: 2s ease-in;
+        left: 75%;
     }
     .restaurant__child {
         background-color: white;
@@ -324,7 +327,7 @@ a {
             width: 10%;
             min-height: 67%;
             -webkit-transition: right 2s;
-            transition: right 2s;
+            transition: 2s;
             border-top-right-radius: 1rem;
             border-bottom-right-radius: 1rem;
         }
@@ -403,6 +406,7 @@ a {
             .pricetags {
                 right: 5%;
                 font-weight: 900;
+                transition: 2s;
             }
         }
     }
@@ -415,11 +419,6 @@ a {
         &:hover::after {
             width: 100px;
             transition: width 1s;
-        }
-        .checkmark {
-            position: absolute;
-            left: 60%;
-            color: red;
         }
         footer {
             padding-bottom: 4px;
@@ -559,11 +558,6 @@ a {
             @include inlineRight;
             font-weight: bold;
             transition: 1s;
-            &:hover {
-                left: 75%;
-                transition: 900ms;
-                transition-delay: 0.3s;
-            }
         }
         h2 {
             padding: 0px 15px 0px 11px;
@@ -585,6 +579,7 @@ a {
     }
     .restaurant_content:hover .pricetags {
         transition: 1100ms ease-out 0s;
+        transition-delay: 200ms;
         left: 75%;
     }
     .groups {
