@@ -213,14 +213,14 @@ a {
         } 
         .restaurant_content:hover .checkmark {
             right: 0;
-            transition: right 2s;
+            transition: right 1s;
             overflow: hidden;
             opacity: 100%;
             z-index: 2;
         }
         .restaurant_content:hover .pricetags {
             left: 75%;
-            transition: left 2s;
+            transition: left 1s;
             overflow: hidden;
             opacity: 100%;
             z-index: 2;
@@ -303,12 +303,16 @@ a {
         padding-right: 15px;
         padding-bottom: 10px;
     }
+    .checkmarkspin {
+        animation: SpinCheck 2s infinite;
+    }
     .restaurant_content:hover .checkmark {
-        transition: 1s ease 0s;
+        transition: 750ms;
         right: 0;
     }
     .restaurant_content:hover .pricetags {
-        transition: 2s ease-in;
+        transition: 760ms;
+        transition-delay: 90ms;
         left: 75%;
     }
     .restaurant__child {
@@ -328,7 +332,7 @@ a {
             width: 10%;
             min-height: 67%;
             -webkit-transition: right 2s;
-            transition: 2s;
+            transition: 5s;
             border-top-right-radius: 1rem;
             border-bottom-right-radius: 1rem;
         }
@@ -407,7 +411,6 @@ a {
             .pricetags {
                 right: 5%;
                 font-weight: 900;
-                transition: 2s;
             }
         }
     }
@@ -572,16 +575,21 @@ a {
         }
     }
     .checkmarkspin {
-        animation: SpinCheck 2s infinite;
+        animation: SpinCheck 2s forwards;
     }
     .restaurant_content:hover .checkmark {
-        transition: 1s ease 0s;
         right: 0;
+        transition: right 1s;
+        overflow: hidden;
+        opacity: 100%;
+        z-index: 2;
     }
     .restaurant_content:hover .pricetags {
-        transition: 1100ms ease-out 0s;
-        transition-delay: 200ms;
         left: 75%;
+        transition: left 1s;
+        overflow: hidden;
+        opacity: 100%;
+        z-index: 2;
     }
     .groups {
         display: block;

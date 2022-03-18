@@ -458,16 +458,16 @@ a {
   }
   .restaurant__child .restaurant_content:hover .checkmark {
     right: 0;
-    -webkit-transition: right 2s;
-    transition: right 2s;
+    -webkit-transition: right 1s;
+    transition: right 1s;
     overflow: hidden;
     opacity: 100%;
     z-index: 2;
   }
   .restaurant__child .restaurant_content:hover .pricetags {
     left: 75%;
-    -webkit-transition: left 2s;
-    transition: left 2s;
+    -webkit-transition: left 1s;
+    transition: left 1s;
     overflow: hidden;
     opacity: 100%;
     z-index: 2;
@@ -598,14 +598,20 @@ a {
     padding-right: 15px;
     padding-bottom: 10px;
   }
+  .checkmarkspin {
+    -webkit-animation: SpinCheck 2s infinite;
+            animation: SpinCheck 2s infinite;
+  }
   .restaurant_content:hover .checkmark {
-    -webkit-transition: 1s ease 0s;
-    transition: 1s ease 0s;
+    -webkit-transition: 750ms;
+    transition: 750ms;
     right: 0;
   }
   .restaurant_content:hover .pricetags {
-    -webkit-transition: 2s ease-in;
-    transition: 2s ease-in;
+    -webkit-transition: 760ms;
+    transition: 760ms;
+    -webkit-transition-delay: 90ms;
+            transition-delay: 90ms;
     left: 75%;
   }
   .restaurant__child {
@@ -626,8 +632,8 @@ a {
     width: 10%;
     min-height: 67%;
     -webkit-transition: right 2s;
-    -webkit-transition: 2s;
-    transition: 2s;
+    -webkit-transition: 5s;
+    transition: 5s;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
   }
@@ -741,8 +747,6 @@ a {
   .food-menu .restaurant__child .pricetags {
     right: 5%;
     font-weight: 900;
-    -webkit-transition: 2s;
-    transition: 2s;
   }
   .groups {
     display: block;
@@ -972,20 +976,24 @@ a {
     font-size: 14px;
   }
   .checkmarkspin {
-    -webkit-animation: SpinCheck 2s infinite;
-            animation: SpinCheck 2s infinite;
+    -webkit-animation: SpinCheck 2s forwards;
+            animation: SpinCheck 2s forwards;
   }
   .restaurant_content:hover .checkmark {
-    -webkit-transition: 1s ease 0s;
-    transition: 1s ease 0s;
     right: 0;
+    -webkit-transition: right 1s;
+    transition: right 1s;
+    overflow: hidden;
+    opacity: 100%;
+    z-index: 2;
   }
   .restaurant_content:hover .pricetags {
-    -webkit-transition: 1100ms ease-out 0s;
-    transition: 1100ms ease-out 0s;
-    -webkit-transition-delay: 200ms;
-            transition-delay: 200ms;
     left: 75%;
+    -webkit-transition: left 1s;
+    transition: left 1s;
+    overflow: hidden;
+    opacity: 100%;
+    z-index: 2;
   }
   .groups {
     display: block;
