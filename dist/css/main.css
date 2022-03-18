@@ -478,6 +478,7 @@ a {
   }
   .pricetags {
     font-weight: bold;
+    left: 90%;
     position: absolute;
     -webkit-transition: 2s;
     transition: 2s;
