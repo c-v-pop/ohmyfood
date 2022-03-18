@@ -603,8 +603,8 @@ a {
             animation: SpinCheck 2s infinite;
   }
   .restaurant_content:hover .checkmark {
-    -webkit-transition: 750ms;
-    transition: 750ms;
+    -webkit-transition: 1s;
+    transition: 1s;
     right: 0;
   }
   .restaurant_content:hover .pricetags {
@@ -632,8 +632,8 @@ a {
     width: 10%;
     min-height: 67%;
     -webkit-transition: right 2s;
-    -webkit-transition: 5s;
-    transition: 5s;
+    -webkit-transition: 2s;
+    transition: 2s;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
   }
@@ -747,6 +747,8 @@ a {
   .food-menu .restaurant__child .pricetags {
     right: 5%;
     font-weight: 900;
+    -webkit-transition: all 3s;
+    transition: all 3s;
   }
   .groups {
     display: block;
@@ -976,8 +978,8 @@ a {
     font-size: 14px;
   }
   .checkmarkspin {
-    -webkit-animation: SpinCheck 2s forwards;
-            animation: SpinCheck 2s forwards;
+    -webkit-animation: SpinCheck 2s infinite;
+            animation: SpinCheck 2s infinite;
   }
   .restaurant_content:hover .checkmark {
     right: 0;
@@ -991,6 +993,8 @@ a {
     left: 75%;
     -webkit-transition: left 1s;
     transition: left 1s;
+    -webkit-transition-delay: 200ms;
+            transition-delay: 200ms;
     overflow: hidden;
     opacity: 100%;
     z-index: 2;
