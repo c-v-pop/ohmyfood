@@ -639,13 +639,6 @@ a {
     transition: 1s;
     right: 0;
   }
-  .restaurant_content:hover .pricetags {
-    -webkit-transition: 760ms;
-    transition: 760ms;
-    -webkit-transition-delay: 90ms;
-            transition-delay: 90ms;
-    left: 75%;
-  }
   .restaurant__child {
     background-color: white;
     border-radius: 1rem;
@@ -777,10 +770,12 @@ a {
     margin-top: 5%;
   }
   .food-menu .restaurant__child .pricetags {
-    right: 5%;
+    left: 88%;
     font-weight: 900;
-    -webkit-transition: all 3s;
-    transition: all 3s;
+    position: -webkit-sticky;
+    position: sticky;
+    -webkit-transition-delay: 600ms;
+            transition-delay: 600ms;
   }
   .groups {
     display: block;
@@ -812,10 +807,6 @@ a {
     font-size: 15px;
     padding-bottom: 10px;
     margin-left: 20px;
-  }
-  .restaurant__child .pricetags {
-    position: absolute;
-    right: 30%;
   }
   footer {
     display: -webkit-box;

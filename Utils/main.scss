@@ -338,11 +338,6 @@ a {
         transition: 1s;
         right: 0;
     }
-    .restaurant_content:hover .pricetags {
-        transition: 760ms;
-        transition-delay: 90ms;
-        left: 75%;
-    }
     .restaurant__child {
         background-color: white;
         border-radius: 1rem;
@@ -437,9 +432,10 @@ a {
         .restaurant__child {
             margin-top: 5%;
             .pricetags {
-                right: 5%;
+                left: 88%;
                 font-weight: 900;
-                transition: all 3s;
+                position: sticky;
+                transition-delay: 600ms;
             }
         }
     }
@@ -471,10 +467,6 @@ a {
             font-size: 15px;
             padding-bottom: 10px;
             margin-left: 20px;
-        }
-        .pricetags {
-            position: absolute;
-            right: 30%;
         }
     }
     footer {
