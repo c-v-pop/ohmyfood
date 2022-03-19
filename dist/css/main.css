@@ -582,6 +582,22 @@ a {
     margin-left: 20px;
     font-weight: bold;
   }
+  .food-menu .restaurant_content:hover h2 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 17%;
+    -webkit-transition: 800ms ease-out;
+    transition: 800ms ease-out;
+  }
+  .food-menu .restaurant_content:hover p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 17%;
+    -webkit-transition: 800ms ease-out;
+    transition: 800ms ease-out;
+  }
 }
 
 @media only screen and (min-width: 540px) and (max-width: 992px) {
@@ -593,6 +609,22 @@ a {
     opacity: 30%;
     min-height: 100%;
     z-index: -10;
+  }
+  .restaurant_content:hover h2 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 17%;
+    -webkit-transition: 800ms ease-out;
+    transition: 800ms ease-out;
+  }
+  .restaurant_content:hover p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 17%;
+    -webkit-transition: 800ms ease-out;
+    transition: 800ms ease-out;
   }
   footer {
     padding-right: 15px;
@@ -874,6 +906,22 @@ a {
     margin-right: auto;
     padding-left: 1rem;
     font-size: 20px;
+  }
+  .restaurant_content:hover h2 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 17%;
+    -webkit-transition: 800ms ease-out;
+    transition: 800ms ease-out;
+  }
+  .restaurant_content:hover p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 17%;
+    -webkit-transition: 800ms ease-out;
+    transition: 800ms ease-out;
   }
   #how_header {
     margin-left: 20px;
