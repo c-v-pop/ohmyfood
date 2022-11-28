@@ -37,13 +37,13 @@ Animations
 
 
 Homepage Mockup for mobile version
+
 ![Homepage](https://user-images.githubusercontent.com/61190539/204390506-9c8bd456-0a00-4e14-b5fd-a44910732b55.png)
 
 Menu pages Mock-ups for mobile version
+
 ![Menu - À la française](https://user-images.githubusercontent.com/61190539/204390569-2e44c2ee-aa2a-49eb-97da-af894a07d124.png)
-![Menu - La note enchantée](https://user-images.githubusercontent.com/61190539/204390573-3d3f78ce-a400-4722-b5c2-93f503a5a6ec.png)
-![Menu - La palette du goût](https://user-images.githubusercontent.com/61190539/204390577-d9a16d6b-f677-429c-bd59-df457463e9b3.png)
-![Menu - Le délice des sens](https://user-images.githubusercontent.com/61190539/204390578-300f2604-06b6-4ef9-9340-700c289b5dc3.png)
+
 
 
 
