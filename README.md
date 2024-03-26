@@ -1,6 +1,6 @@
 OhMyFood - Restaurant website
 
-Live page @ https://noanswerss.github.io/ohmyfoodscss/
+Live page @ https://c-v-pop.github.io/ohmyfood/
 
 Integrate a mobile website with animations in CSS
 
